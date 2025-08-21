@@ -1,0 +1,317 @@
+/* Login Page Styles - Figma Design */
+.loginContainer {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Background Image Section */
+.loginBackground {
+  flex: 0 0 63.5%;
+  background-image: url("/signup-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.backgroundOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+}
+
+/* Form Section */
+.loginFormSection {
+  flex: 0 0 36.5%;
+  background: #ffffff;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.loginHeader {
+  position: absolute;
+  top: 51px;
+  right: 67px;
+  z-index: 10;
+}
+
+.loginContent {
+  padding: 103px 53px 48px 53px;
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginTitleSection {
+  margin-bottom: 32px;
+}
+
+.loginTitle {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.21;
+  color: #000000;
+  margin: 0 0 15px 0;
+}
+
+.registrationLink {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.21;
+  color: #000000;
+  margin: 0;
+}
+
+.registrationLinkText {
+  color: #da251d;
+  text-decoration: none;
+}
+
+.registrationLinkText:hover {
+  text-decoration: underline;
+}
+
+/* Form Styles */
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 35px;
+}
+
+.formGroup {
+  position: relative;
+}
+
+.formLabel {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.21;
+  color: #000000;
+  margin-bottom: 17px;
+  display: block;
+}
+
+.formInput {
+  width: 100%;
+  height: 48px;
+  padding: 12px 16px;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background: #ffffff;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: #da251d;
+  color: #000;
+}
+
+.formInput::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.passwordInputContainer {
+  position: relative;
+}
+
+.passwordToggle {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.passwordToggle svg {
+  width: 19px;
+  height: 18px;
+}
+
+/* Forgot Password Button */
+.forgotPasswordBtn {
+  background: none;
+  border: none;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.21;
+  color: #ff5064;
+  cursor: pointer;
+  text-align: right;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.forgotPasswordBtn:hover {
+  text-decoration: underline;
+}
+
+/* Submit Button */
+.loginSubmitBtn {
+  width: 100%;
+  height: 44px;
+  background: #ff5064;
+  border: none;
+  border-radius: 5px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.21;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-bottom: 54px;
+}
+
+.loginSubmitBtn:hover {
+  background: #e73c52;
+}
+
+/* Divider Section */
+.dividerSection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.dividerLine {
+  flex: 1;
+  height: 1px;
+  background: #000000;
+}
+
+.dividerText {
+  padding: 0 20px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.21;
+  color: #666;
+  background: #ffffff;
+}
+
+/* Social Login Section */
+.socialLoginSection {
+  margin-top: 0;
+}
+
+.socialLoginButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.socialBtn {
+  width: 50px;
+  height: 50px;
+  background: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.socialBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.socialIcon {
+  width: 50px;
+  height: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .loginBackground {
+    flex: 0 0 50%;
+  }
+
+  .loginFormSection {
+    flex: 0 0 50%;
+  }
+
+  .loginContent {
+    padding: 103px 30px 48px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .loginContainer {
+    flex-direction: column;
+  }
+
+  .loginBackground {
+    flex: 0 0 200px;
+    min-height: 200px;
+  }
+
+  .loginFormSection {
+    flex: 1;
+  }
+
+  .loginHeader {
+    position: static;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .loginContent {
+    padding: 20px;
+    height: auto;
+  }
+
+  .loginTitle {
+    font-size: 36px;
+  }
+
+  .socialLoginButtons {
+    gap: 12px;
+  }
+
+  .socialBtn {
+    width: 45px;
+    height: 45px;
+  }
+
+  .socialIcon {
+    width: 45px;
+    height: 45px;
+  }
+}

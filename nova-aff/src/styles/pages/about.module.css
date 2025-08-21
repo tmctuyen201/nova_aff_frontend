@@ -1,0 +1,268 @@
+/* About Page Styles - Based on Figma Design */
+
+.aboutPage {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+/* Nova Intro Section */
+.novaIntroSection {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.novaIntroContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 1fr 550px;
+  gap: 80px;
+  align-items: center;
+}
+
+.introContent {
+  max-width: 611px;
+}
+
+.introSubtitle {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.21;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.introTitle {
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.21;
+  color: #000000;
+  margin: 0;
+}
+
+.introImage {
+  display: flex;
+  justify-content: center;
+}
+
+.introImg {
+  width: 550px;
+  height: 550px;
+  border-radius: 25px;
+  object-fit: cover;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Nova Story Section */
+.novaStorySection {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.novaStoryContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 550px 1fr;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.storyImage {
+  display: flex;
+  justify-content: center;
+}
+
+.storyImg {
+  width: 550px;
+  height: 550px;
+  border-radius: 25px;
+  object-fit: cover;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.storyContent {
+  padding-top: 0;
+}
+
+.storyTitle {
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.21;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.storyText {
+  max-width: 596px;
+}
+
+.storyText p {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.21;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.storyText p:last-child {
+  margin-bottom: 0;
+}
+
+/* Values Section */
+.valuesSection {
+  padding: 120px 0;
+  background-color: #ffffff;
+}
+
+.valuesContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.valuesTitle {
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.21;
+  color: #000000;
+  margin-bottom: 80px;
+  padding-left: 32px;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+}
+
+.valueColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.valueHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.valueIcon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 25px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.valueIcon svg {
+  width: 100%;
+  height: 100%;
+  fill: #000000;
+}
+
+.valueName {
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.21;
+  color: #000000;
+  margin: 0;
+}
+
+.valueItems {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.valueItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.bulletPoint {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.valueItem span {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.21;
+  color: #000000;
+  flex: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .novaIntroContainer {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .novaStoryContainer {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .valuesGrid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .introImg,
+  .storyImg {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .introTitle {
+    font-size: 32px;
+  }
+
+  .storyTitle,
+  .valuesTitle {
+    font-size: 28px;
+  }
+
+  .introImg,
+  .storyImg {
+    width: 300px;
+    height: 300px;
+  }
+
+  .novaIntroContainer,
+  .novaStoryContainer,
+  .valuesContainer {
+    padding: 0 20px;
+  }
+
+  .novaIntroSection,
+  .novaStorySection {
+    padding: 60px 0;
+  }
+
+  .valuesSection {
+    padding: 80px 0;
+  }
+}

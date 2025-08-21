@@ -1,0 +1,305 @@
+/* Sign Up Page Styles - Figma Design */
+.signupContainer {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Background Image Section */
+.signupBackground {
+  flex: 0 0 63.5%;
+  background-image: url("/signup-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.backgroundOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+}
+
+/* Form Section */
+.signupFormSection {
+  flex: 0 0 36.5%;
+  background: #ffffff;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.signupHeader {
+  position: absolute;
+  top: 53px;
+  right: 59px;
+  z-index: 10;
+}
+
+.signupContent {
+  padding: 135px 51px 48px 51px;
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.signupTitleSection {
+  margin-bottom: 32px;
+}
+
+.signupTitle {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.21;
+  color: #000000;
+  margin: 0 0 15px 0;
+}
+
+.loginLink {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.21;
+  color: #000000;
+  margin: 0;
+}
+
+.loginLinkText {
+  color: #da251d;
+  text-decoration: none;
+}
+
+.loginLinkText:hover {
+  text-decoration: underline;
+}
+
+/* Form Styles */
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 35px;
+}
+
+.formGroup {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.formLabel {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.21;
+  color: #000000;
+  margin-bottom: 17px;
+  display: block;
+}
+
+.formInput {
+  width: 100%;
+  height: 48px;
+  padding: 12px 16px;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background: #ffffff;
+  font-family: Inter;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: #da251d;
+}
+
+.formInput.error {
+  border-color: #da251d;
+  background-color: rgba(218, 37, 29, 0.02);
+}
+
+.formError {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.21;
+  color: #da251d;
+  margin-top: 8px;
+  display: block;
+  padding-left: 16px;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.passwordInputContainer {
+  position: relative;
+}
+
+.passwordToggle {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.passwordToggle svg {
+  width: 19px;
+  height: 18px;
+}
+
+/* Submit Button */
+.signupSubmitBtn {
+  width: 100%;
+  height: 44px;
+  background: #ff5064;
+  border: none;
+  border-radius: 5px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.21;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-bottom: 35px;
+}
+
+.signupSubmitBtn:hover {
+  background: #e73c52;
+}
+
+/* Terms Text */
+.termsText {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.21;
+  color: #000000;
+  margin: 0 0 16px 0;
+  text-align: left;
+}
+
+/* Social Login Section */
+.socialLoginSection {
+  margin-top: 0;
+}
+
+.socialLoginButtons {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.socialBtn {
+  width: 50px;
+  height: 50px;
+  background: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.socialBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.socialIcon {
+  width: 50px;
+  height: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .signupBackground {
+    flex: 0 0 50%;
+  }
+
+  .signupFormSection {
+    flex: 0 0 50%;
+  }
+
+  .signupContent {
+    padding: 135px 30px 48px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .signupContainer {
+    flex-direction: column;
+  }
+
+  .signupBackground {
+    flex: 0 0 200px;
+    min-height: 200px;
+  }
+
+  .signupFormSection {
+    flex: 1;
+  }
+
+  .signupHeader {
+    position: static;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .signupContent {
+    padding: 20px;
+    height: auto;
+  }
+
+  .signupTitle {
+    font-size: 36px;
+  }
+
+  .socialLoginButtons {
+    gap: 12px;
+  }
+
+  .socialBtn {
+    width: 45px;
+    height: 45px;
+  }
+
+  .socialIcon {
+    width: 45px;
+    height: 45px;
+  }
+}

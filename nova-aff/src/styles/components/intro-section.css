@@ -1,0 +1,74 @@
+/* Intro Section Styles */
+.intro-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.intro-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.intro-content {
+  flex: 1;
+}
+
+.intro-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.intro-subtitle {
+  font-size: 20px;
+  color: #da251d;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.intro-description {
+  font-size: 18px;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.intro-image {
+  flex: 1;
+}
+
+.intro-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .intro-section {
+    padding: 60px 0;
+  }
+
+  .intro-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .intro-title {
+    font-size: 36px;
+  }
+
+  .intro-subtitle {
+    font-size: 18px;
+  }
+
+  .intro-description {
+    font-size: 16px;
+  }
+}

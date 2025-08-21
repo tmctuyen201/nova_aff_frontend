@@ -1,0 +1,286 @@
+/* Publisher Creator Tools Page Styles */
+.publisherCreatorToolsPage {
+  font-family: Inter, sans-serif;
+}
+
+/* Hero Section */
+.heroSection {
+  padding: 100px 0;
+  background-color: #ffffff;
+}
+
+.heroContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.heroContent {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heroContent h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.heroContent p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #000000;
+  max-width: 954px;
+  margin: 0 auto;
+}
+
+/* Tools Section */
+.toolsSection {
+  padding: 100px 0;
+  background-color: #ffffff;
+}
+
+.toolsContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 177px;
+}
+
+.toolsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+}
+
+.toolCard {
+  display: grid;
+  grid-template-columns: 479px 1fr;
+  gap: 105px;
+  align-items: start;
+}
+
+.toolCard .reverse {
+  direction: rtl;
+}
+
+.toolCard .reverse .toolContent,
+.toolCard .reverse .toolImage {
+  direction: ltr;
+}
+
+.toolImage {
+  width: 479px;
+  height: 490px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.toolImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.toolContent {
+  padding-top: 76px;
+}
+
+.toolContent h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.toolContent p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+.seeMoreBtn {
+  background-color: #ff5064;
+  color: white;
+  border: none;
+  padding: 20px 31px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s ease;
+  min-width: 194px;
+  justify-content: center;
+}
+
+.seeMoreBtn:hover {
+  background-color: #e6455a;
+  transform: translateX(5px);
+}
+
+/* CTA Section */
+.ctaSection {
+  background-color: #fff8f8;
+  padding: 100px 0;
+}
+
+.ctaContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.ctaContent {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ctaContent h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.ctaContent p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #000000;
+  margin-bottom: 50px;
+  max-width: 859px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.ctaButton {
+  background-color: #ff5064;
+  color: white;
+  border: none;
+  padding: 20px 36px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s ease;
+  min-width: 223px;
+  justify-content: center;
+}
+
+.ctaButton:hover {
+  background-color: #e6455a;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .toolsContainer {
+    padding: 0 40px;
+  }
+
+  .toolCard {
+    grid-template-columns: 400px 1fr;
+    gap: 60px;
+  }
+
+  .toolImage {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .toolsGrid {
+    gap: 100px;
+  }
+
+  .toolCard,
+  .toolCard.reverse {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    direction: ltr;
+    text-align: center;
+  }
+
+  .toolImage {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .toolContent {
+    padding-top: 0;
+  }
+
+  .toolContent h3 {
+    font-size: 20px;
+  }
+
+  .toolContent p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 36px;
+  }
+
+  .heroContent p {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .toolsContainer {
+    padding: 0 20px;
+  }
+
+  .toolsGrid {
+    gap: 60px;
+  }
+
+  .toolContent h3 {
+    font-size: 18px;
+  }
+
+  .toolContent p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .toolImage {
+    height: 250px;
+  }
+
+  .ctaContent h2 {
+    font-size: 28px;
+  }
+
+  .ctaContent p {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .seeMoreBtn,
+  .ctaButton {
+    min-width: 180px;
+    padding: 15px 25px;
+    font-size: 16px;
+  }
+}

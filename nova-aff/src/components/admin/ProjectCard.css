@@ -1,0 +1,419 @@
+/* ProjectCard Styles - Compact & Modern Design */
+.project-card {
+  width: 100%;
+  max-width: 340px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.03),
+    rgba(139, 92, 246, 0.03)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+.project-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: #6366f1;
+  box-shadow: 0 12px 40px rgba(99, 102, 241, 0.2), 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:active {
+  transform: translateY(-3px) scale(1.01);
+}
+
+/* Main content area */
+.project-card-content {
+  flex: 1;
+  height: 180px;
+  margin: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8fafc, #edf2f7);
+  border-radius: 12px;
+  color: #718096;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.project-card-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+.project-card:hover .project-card-content::before {
+  left: 100%;
+}
+
+.project-card:hover .project-card-content {
+  background: linear-gradient(135deg, #ffffff, #f7fafc);
+  color: #4a5568;
+  transform: scale(1.02);
+}
+
+/* Separator line - removed */
+.project-card-separator {
+  display: none;
+}
+
+/* Project info section */
+.project-card-info {
+  height: 90px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.project-details {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* More options button */
+.project-more-options {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 10;
+}
+
+.more-options-btn {
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.more-options-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(99, 102, 241, 0.1),
+    transparent
+  );
+  transition: left 0.4s ease;
+}
+
+.more-options-btn:hover::before {
+  left: 100%;
+}
+
+.more-options-btn:hover {
+  background: #6366f1;
+  border-color: #6366f1;
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+}
+
+/* CSS More Options Icon - 3 Dots */
+.more-options-icon {
+  width: 4px;
+  height: 4px;
+  background: #6b7280;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.more-options-icon::before,
+.more-options-icon::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #6b7280;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.more-options-icon::before {
+  top: -8px;
+  left: 0;
+}
+
+.more-options-icon::after {
+  top: 8px;
+  left: 0;
+}
+
+.more-options-btn:hover .more-options-icon,
+.more-options-btn:hover .more-options-icon::before,
+.more-options-btn:hover .more-options-icon::after {
+  background: #ffffff;
+}
+
+/* Options dropdown */
+.options-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  min-width: 120px;
+  overflow: hidden;
+  animation: dropdownFadeIn 0.3s ease-out;
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.option-item {
+  padding: 12px 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.option-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(99, 102, 241, 0.1),
+    transparent
+  );
+  transition: left 0.4s ease;
+}
+
+.option-item:hover::before {
+  left: 100%;
+}
+
+.option-item:hover {
+  background: rgba(99, 102, 241, 0.1);
+  color: #6366f1;
+  transform: translateX(4px);
+}
+
+/* Project name */
+.project-name {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #1f2937;
+  margin-bottom: 8px;
+  margin-right: 45px;
+  word-wrap: break-word;
+  transition: color 0.3s ease;
+}
+
+.project-card:hover .project-name {
+  color: #6366f1;
+}
+
+/* Project date */
+.project-date {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #6b7280;
+  margin-right: 45px;
+  transition: color 0.3s ease;
+}
+
+.project-card:hover .project-date {
+  color: #4b5563;
+}
+
+/* Empty state for content */
+.project-card-content:empty::before {
+  content: "No preview available";
+  color: #9ca3af;
+  font-style: italic;
+  font-size: 13px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .project-card {
+    max-width: 300px;
+    height: 260px;
+  }
+
+  .project-card-content {
+    height: 150px;
+    margin: 14px;
+    font-size: 14px;
+  }
+
+  .project-card-info {
+    height: 85px;
+    padding: 18px 22px;
+  }
+
+  .project-name {
+    font-size: 17px;
+  }
+
+  .project-date {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    max-width: 100%;
+    height: 240px;
+  }
+
+  .project-card-content {
+    height: 140px;
+    margin: 12px;
+    font-size: 13px;
+  }
+
+  .project-card-info {
+    height: 80px;
+    padding: 16px 20px;
+  }
+
+  .project-name {
+    font-size: 16px;
+  }
+
+  .project-date {
+    font-size: 12px;
+  }
+
+  .more-options-btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .more-options-icon {
+    width: 4px;
+    height: 4px;
+  }
+
+  .options-dropdown {
+    min-width: 110px;
+  }
+
+  .option-item {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    height: 180px;
+  }
+
+  .project-card-content {
+    height: 100px;
+    margin: 6px;
+    font-size: 11px;
+  }
+
+  .project-card-info {
+    height: 65px;
+    padding: 10px 14px;
+  }
+
+  .project-name {
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+
+  .project-date {
+    font-size: 10px;
+  }
+
+  .more-options-btn {
+    width: 26px;
+    height: 26px;
+    top: 6px;
+    right: 6px;
+  }
+}

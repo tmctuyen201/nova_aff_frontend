@@ -1,0 +1,123 @@
+/* Login Modal Styles */
+.login-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.login-modal {
+  background: white;
+  border-radius: 12px;
+  padding: 0;
+  max-width: 400px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.login-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 24px 0;
+  margin-bottom: 20px;
+}
+
+.login-modal-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #6c757d;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.2s ease;
+}
+
+.close-button:hover {
+  background: #f0f0f0;
+}
+
+.login-modal-content {
+  padding: 0 24px 24px;
+}
+
+.login-modal-content p {
+  color: #6c757d;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.login-modal-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.modal-btn.primary {
+  background: #da251d;
+  color: white;
+  border-color: #da251d;
+}
+
+.modal-btn.primary:hover {
+  background: #b91e15;
+  border-color: #b91e15;
+}
+
+.modal-btn.secondary {
+  background: transparent;
+  color: #da251d;
+  border-color: #da251d;
+}
+
+.modal-btn.secondary:hover {
+  background: #da251d;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-modal {
+    width: 95%;
+    margin: 20px;
+  }
+
+  .login-modal-header {
+    padding: 20px 20px 0;
+  }
+
+  .login-modal-content {
+    padding: 0 20px 20px;
+  }
+}

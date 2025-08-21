@@ -1,0 +1,722 @@
+/* AdminDashboard Styles - Compact & Clean Design */
+.admin-dashboard {
+  min-height: calc(100vh - 150px);
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  padding: 24px;
+  position: relative;
+  animation: fadeInUp 0.6s ease-out;
+  overflow-x: hidden;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Floating background elements */
+.admin-dashboard::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(99, 102, 241, 0.05) 0%,
+    transparent 70%
+  );
+  animation: float 20s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate(30px, -30px) rotate(120deg);
+  }
+  66% {
+    transform: translate(-20px, 20px) rotate(240deg);
+  }
+}
+
+/* Section Titles */
+.section-title {
+  font-family: "Inter", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1a202c;
+  margin: 0 0 24px 0;
+  position: relative;
+  animation: slideInLeft 0.5s ease-out 0.1s both;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  border-radius: 2px;
+  animation: expandWidth 0.6s ease-out 0.3s both;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes expandWidth {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60px;
+  }
+}
+
+/* New Project Section */
+.new-project-section {
+  margin-bottom: 48px;
+  animation: slideInLeft 0.5s ease-out 0.2s both;
+}
+
+.new-project-card {
+  width: 280px;
+  height: 160px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+/* Shimmer effect */
+.new-project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(99, 102, 241, 0.1),
+    transparent
+  );
+  transition: left 0.6s ease;
+  z-index: 1;
+}
+
+.new-project-card:hover::before {
+  left: 100%;
+}
+
+.new-project-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: #6366f1;
+  box-shadow: 0 12px 40px rgba(99, 102, 241, 0.2), 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.new-project-card:active {
+  transform: translateY(-3px) scale(1.01);
+}
+
+.new-project-icon {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+.new-project-card:hover .new-project-icon {
+  transform: scale(1.1) rotate(90deg);
+}
+
+/* Create custom plus icon */
+.plus-icon {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Replace img with CSS plus icon */
+.plus-icon::before,
+.plus-icon::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.plus-icon::before {
+  width: 4px;
+  height: 32px;
+}
+
+.plus-icon::after {
+  width: 32px;
+  height: 4px;
+}
+
+.new-project-card:hover .plus-icon::before,
+.new-project-card:hover .plus-icon::after {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.4);
+}
+
+/* Add text below icon */
+.new-project-text {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4a5568;
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.new-project-card:hover .new-project-text {
+  color: #6366f1;
+  transform: translateY(-1px);
+}
+
+/* Recent Projects Section */
+.recent-projects-section {
+  margin-bottom: 40px;
+  animation: slideInRight 0.5s ease-out 0.3s both;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding: 20px 24px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(99, 102, 241, 0.1);
+  border-radius: 14px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.section-header:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-color: rgba(99, 102, 241, 0.2);
+}
+
+.section-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.action-btn {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.action-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(99, 102, 241, 0.1),
+    transparent
+  );
+  transition: left 0.4s ease;
+}
+
+.action-btn:hover::before {
+  left: 100%;
+}
+
+.action-btn:hover {
+  background: #6366f1;
+  border-color: #6366f1;
+  transform: translateY(-2px) rotate(3deg);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+}
+
+.action-btn:hover svg {
+  filter: brightness(0) invert(1);
+  transform: scale(1.05);
+}
+
+.action-btn:active {
+  transform: translateY(-1px) rotate(1deg) scale(0.98);
+}
+
+.action-btn svg {
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+}
+
+.action-btn:hover svg {
+  opacity: 1;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 24px;
+  max-width: 100%;
+}
+
+.projects-grid > * {
+  animation: fadeInScale 0.5s ease-out both;
+}
+
+.projects-grid > *:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.projects-grid > *:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.projects-grid > *:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.projects-grid > *:nth-child(4) {
+  animation-delay: 0.25s;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Enhanced Project Cards */
+.project-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+  position: relative;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.05),
+    rgba(139, 92, 246, 0.05)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: #6366f1;
+  box-shadow: 0 20px 60px rgba(99, 102, 241, 0.25),
+    0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.project-card:active {
+  transform: translateY(-4px) scale(1.01);
+}
+
+/* Project Preview Content */
+.project-preview {
+  color: #718096;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  background: linear-gradient(135deg, #f7fafc, #edf2f7);
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  margin: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.project-preview:hover {
+  background: linear-gradient(135deg, #ffffff, #f7fafc);
+  color: #4a5568;
+  transform: scale(1.02);
+}
+
+/* Project Card Info */
+.project-card-info {
+  padding: 20px 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.project-details h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0 0 8px 0;
+  transition: color 0.3s ease;
+}
+
+.project-card:hover .project-details h3 {
+  color: #6366f1;
+}
+
+.project-details p {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #718096;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.project-card:hover .project-details p {
+  color: #4a5568;
+}
+
+/* More options button enhancement */
+.more-options-btn {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 12px;
+  padding: 8px;
+  transition: all 0.3s ease;
+}
+
+.more-options-btn:hover {
+  background: #6366f1;
+  border-color: #6366f1;
+  transform: scale(1.1);
+}
+
+.more-options-btn:hover .more-options-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .new-project-card {
+    width: 260px;
+    height: 150px;
+  }
+
+  .plus-icon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .plus-icon::before {
+    height: 28px;
+    width: 3px;
+  }
+
+  .plus-icon::after {
+    width: 28px;
+    height: 3px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .admin-dashboard {
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 18px;
+  }
+
+  .new-project-section {
+    margin-bottom: 36px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .new-project-card {
+    width: 240px;
+    height: 140px;
+  }
+
+  .plus-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .plus-icon::before {
+    height: 26px;
+    width: 3px;
+  }
+
+  .plus-icon::after {
+    width: 26px;
+    height: 3px;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-dashboard {
+    padding: 16px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px 20px;
+  }
+
+  .section-actions {
+    gap: 10px;
+    align-self: stretch;
+    justify-content: center;
+  }
+
+  .action-btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .action-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .new-project-section {
+    margin-bottom: 32px;
+  }
+
+  .section-title {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+
+  .new-project-card {
+    width: 100%;
+    max-width: 300px;
+    height: 130px;
+    margin: 0 auto;
+  }
+
+  .plus-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .plus-icon::before {
+    height: 24px;
+    width: 3px;
+  }
+
+  .plus-icon::after {
+    width: 24px;
+    height: 3px;
+  }
+
+  .new-project-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-dashboard {
+    padding: 12px;
+  }
+
+  .new-project-card {
+    max-width: 280px;
+    height: 120px;
+  }
+
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .new-project-section {
+    margin-bottom: 28px;
+  }
+
+  .plus-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .plus-icon::before {
+    height: 22px;
+    width: 3px;
+  }
+
+  .plus-icon::after {
+    width: 22px;
+    height: 3px;
+  }
+
+  .section-header {
+    padding: 14px 16px;
+  }
+
+  .project-preview {
+    height: 120px;
+    font-size: 14px;
+    margin: 12px;
+  }
+}
+
+/* Custom Scrollbar - Full Width */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(226, 232, 240, 0.5);
+  border-radius: 0;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: scaleY(1.1);
+}
+
+*::-webkit-scrollbar-corner {
+  background: rgba(226, 232, 240, 0.5);
+}
+
+/* Loading States */
+.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Focus States */
+.new-project-card:focus,
+.action-btn:focus,
+.project-card:focus {
+  outline: 2px solid rgba(99, 102, 241, 0.5);
+  outline-offset: 2px;
+}

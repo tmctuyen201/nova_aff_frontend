@@ -1,0 +1,312 @@
+/* Contact Page Styles - Professional & Smooth */
+
+.contactPage {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fff8f8 0%, #fef1f1 100%);
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.contactPage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle at 20% 80%,
+    rgba(255, 80, 100, 0.03) 0%,
+    transparent 50%
+  );
+  pointer-events: none;
+}
+
+.contactContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 120px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Contact Image Section */
+.contactImageSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInLeft 1s ease-out;
+}
+
+.contactImg {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contactImg:hover {
+  transform: scale(1.02) rotate(1deg);
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  animation: fadeInRight 1s ease-out 0.2s both;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Form Rows */
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.formGroup.fullWidth {
+  grid-column: 1 / -1;
+}
+
+/* Form Labels */
+.formLabel {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #1a1a1a;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+/* Form Inputs */
+.formInput,
+.formSelect {
+  width: 100%;
+  height: 48px;
+  padding: 14px 16px;
+  background: linear-gradient(145deg, #ffffff 0%, #fafafa 100%);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #1a1a1a;
+  box-sizing: border-box;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.formInput:focus,
+.formSelect:focus {
+  outline: none;
+  border-color: #ff5064;
+  box-shadow: 0 4px 12px rgba(255, 80, 100, 0.15),
+    0 0 0 3px rgba(255, 80, 100, 0.1);
+  transform: translateY(-1px);
+}
+
+.formInput::placeholder,
+.formSelect option {
+  color: rgba(0, 0, 0, 0.4);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* Custom Select Styling */
+.formSelect {
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 12px center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  padding-right: 40px;
+  appearance: none;
+}
+
+/* Form Textarea */
+.formTextarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 16px;
+  background: linear-gradient(145deg, #ffffff 0%, #fafafa 100%);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #1a1a1a;
+  resize: vertical;
+  box-sizing: border-box;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.formTextarea:focus {
+  outline: none;
+  border-color: #ff5064;
+  box-shadow: 0 4px 12px rgba(255, 80, 100, 0.15),
+    0 0 0 3px rgba(255, 80, 100, 0.1);
+  transform: translateY(-1px);
+}
+
+.formTextarea::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* Submit Button */
+.submitBtn {
+  width: 100%;
+  height: 56px;
+  background: linear-gradient(135deg, #ff5064 0%, #e94057 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 28px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 24px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(255, 80, 100, 0.3);
+}
+
+.submitBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.6s;
+}
+
+.submitBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(255, 80, 100, 0.4);
+}
+
+.submitBtn:hover::before {
+  left: 100%;
+}
+
+.submitBtn:active {
+  transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .contactContainer {
+    grid-template-columns: 1fr;
+    gap: 80px;
+    max-width: 800px;
+  }
+
+  .contactImg {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+  }
+
+  .contactFormSection {
+    max-width: 100%;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactPage {
+    padding: 60px 0;
+  }
+
+  .contactContainer {
+    padding: 0 20px;
+  }
+
+  .contactImg {
+    max-width: 400px;
+  }
+
+  .formLabel {
+    font-size: 16px;
+  }
+
+  .formInput,
+  .formSelect,
+  .formTextarea {
+    font-size: 14px;
+  }
+
+  .submitBtn {
+    font-size: 16px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactImg {
+    max-width: 300px;
+  }
+
+  .formTextarea {
+    min-height: 150px;
+    padding: 15px 20px;
+  }
+}

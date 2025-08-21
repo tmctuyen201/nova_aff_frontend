@@ -1,0 +1,137 @@
+/* ProjectDetailPage Styles - Based on Figma Design */
+.project-detail-page {
+  width: 100vw;
+  min-height: 100vh;
+  background: #fdf1f1; /* Light pink background from Figma */
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Main Content Area */
+.project-main-content {
+  margin-left: 299px; /* Sidebar width */
+  margin-top: 100px; /* Header height */
+  padding: 0;
+  min-height: calc(100vh - 100px);
+  width: calc(100vw - 299px);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Project Title Section */
+.project-title-section {
+  padding: 42px 0 0 181px; /* Position based on Figma measurements */
+  margin-bottom: 23px; /* Space before toolbar */
+}
+
+.project-title {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+/* Table Section - Full Width */
+.project-table-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0; /* Allow table to be scrollable */
+  height: auto;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+/* Ensure proper stacking context */
+.project-detail-page .admin-header {
+  z-index: 1000;
+}
+
+.project-detail-page .admin-sidebar {
+  z-index: 900;
+}
+
+.project-main-content {
+  z-index: 100;
+  position: relative;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .project-main-content {
+    margin-left: 250px;
+    width: calc(100vw - 250px);
+  }
+
+  .project-title-section {
+    padding: 30px 0 0 120px;
+    margin-bottom: 20px;
+  }
+
+  .project-title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-detail-page {
+    background: #fdf1f1;
+  }
+
+  .project-main-content {
+    margin-left: 0;
+    margin-top: 80px;
+    width: 100vw;
+    padding: 0 15px;
+    min-height: calc(100vh - 80px);
+  }
+
+  .project-title-section {
+    padding: 20px 0 0 0;
+    margin-bottom: 15px;
+  }
+
+  .project-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+
+  /* Hide sidebar on mobile - can be toggled */
+  .admin-sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .admin-sidebar.mobile-open {
+    transform: translateX(0);
+  }
+}
+
+/* Tablet adjustments */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .project-main-content {
+    margin-left: 250px;
+    margin-top: 80px;
+    width: calc(100vw - 250px);
+  }
+
+  .project-title-section {
+    padding: 25px 0 0 80px;
+  }
+}
+
+/* Large screen optimizations */
+@media (min-width: 1440px) {
+  .project-main-content {
+    margin-left: 299px;
+    width: calc(100vw - 299px);
+  }
+
+  .project-title-section {
+    padding: 42px 0 0 181px;
+  }
+}

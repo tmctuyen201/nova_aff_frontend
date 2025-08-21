@@ -1,0 +1,188 @@
+/* Brand Page Styles */
+.brandPage {
+  width: 100%;
+}
+
+/* Brand Hero Section */
+.brandHero {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.brandHeroContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.brandHeroContent {
+  flex: 1;
+}
+
+.brandHeroTitle {
+  font-size: 56px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 24px;
+  line-height: 1.1;
+}
+
+.brandHeroSubtitle {
+  font-size: 20px;
+  color: #6c757d;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.brandHeroActions {
+  display: flex;
+  gap: 20px;
+}
+
+.brandCtaPrimary,
+.brandCtaSecondary {
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid;
+}
+
+.brandCtaPrimary {
+  background: #da251d;
+  color: white;
+  border-color: #da251d;
+}
+
+.brandCtaPrimary:hover {
+  background: #b91e15;
+  border-color: #b91e15;
+}
+
+.brandCtaSecondary {
+  background: transparent;
+  color: #da251d;
+  border-color: #da251d;
+}
+
+.brandCtaSecondary:hover {
+  background: #da251d;
+  color: white;
+}
+
+.brandHeroImage {
+  flex: 1;
+}
+
+.brandHeroImg {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Brand Features Section */
+.brandFeatures {
+  padding: 80px 0;
+}
+
+.brandFeaturesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Brand Blog Section */
+.brandBlog {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.brandBlogGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Brand Contact Section */
+.brandContact {
+  padding: 80px 0;
+}
+
+.brandContactContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.brandContactInfo {
+  text-align: left;
+}
+
+.brandContactTitle {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 16px;
+}
+
+.brandContactSubtitle {
+  font-size: 18px;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.brandContactForm {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .brandHero {
+    padding: 60px 0;
+  }
+
+  .brandHeroContainer {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .brandHeroTitle {
+    font-size: 42px;
+  }
+
+  .brandHeroActions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brandContactContent {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .brandContactInfo {
+    text-align: center;
+  }
+
+  .brandContactForm {
+    padding: 30px 20px;
+  }
+
+  .brandFeaturesGrid,
+  .brandBlogGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,242 @@
+/* Toolbar Styles - Based on Figma Design */
+.toolbar {
+  width: 100%; /* Take full available width */
+  height: 100px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.toolbar-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 29px;
+  position: relative;
+}
+
+/* Left Section - Add New Record */
+.toolbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.add-record-btn {
+  display: flex;
+  align-items: center;
+  gap: 23px; /* Space between icon and text */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 16px 0;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+}
+
+.add-record-btn:hover {
+  background: rgba(54, 136, 255, 0.1);
+}
+
+.add-icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.add-icon svg {
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+}
+
+.add-label {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #3688ff;
+}
+
+/* Separator Line */
+.toolbar-separator {
+  width: 0.5px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.5);
+  margin-left: 191px; /* Distance from left based on Figma */
+  margin-right: 23px; /* Space before action buttons */
+}
+
+/* Right Section - Action Buttons */
+.toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between action buttons */
+  flex: 1;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.action-button {
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 9px 14px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #000000;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  min-width: fit-content;
+}
+
+.action-button:hover {
+  background: rgba(0, 0, 0, 0.05);
+  transform: translateY(-1px);
+  border-color: #4285f4;
+}
+
+.action-button:active {
+  transform: translateY(0);
+}
+
+/* Specific button widths based on Figma */
+.action-button:nth-child(1) {
+  /* Customize fields */
+  width: 170px;
+}
+
+.action-button:nth-child(2) {
+  /* View settings */
+  width: 146px;
+}
+
+.action-button:nth-child(3) {
+  /* Filter */
+  width: 84px;
+}
+
+.action-button:nth-child(4) {
+  /* Group by */
+  width: 132px;
+}
+
+.action-button:nth-child(5) {
+  /* Sort */
+  width: 82px;
+}
+
+.action-button:nth-child(6) {
+  /* Row height */
+  width: 141px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .toolbar {
+    width: 100%;
+    max-width: 1132px;
+  }
+
+  .toolbar-container {
+    padding: 0 20px;
+  }
+
+  .toolbar-separator {
+    margin-left: 120px;
+    margin-right: 15px;
+  }
+
+  .toolbar-right {
+    gap: 10px;
+  }
+
+  .action-button {
+    font-size: 16px;
+    padding: 8px 12px;
+    height: 36px;
+  }
+
+  /* Adjust button widths for smaller screens */
+  .action-button:nth-child(1) {
+    width: 140px;
+  }
+  .action-button:nth-child(2) {
+    width: 120px;
+  }
+  .action-button:nth-child(3) {
+    width: 70px;
+  }
+  .action-button:nth-child(4) {
+    width: 110px;
+  }
+  .action-button:nth-child(5) {
+    width: 70px;
+  }
+  .action-button:nth-child(6) {
+    width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .toolbar {
+    height: 80px;
+    width: 100%;
+  }
+
+  .toolbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+    gap: 10px;
+  }
+
+  .toolbar-left {
+    margin-bottom: 5px;
+  }
+
+  .add-record-btn {
+    gap: 15px;
+    padding: 8px 0;
+  }
+
+  .add-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .add-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .add-label {
+    font-size: 16px;
+  }
+
+  .toolbar-separator {
+    display: none;
+  }
+
+  .toolbar-right {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .action-button {
+    font-size: 14px;
+    height: 32px;
+    padding: 6px 10px;
+    min-width: auto;
+    width: auto;
+  }
+}

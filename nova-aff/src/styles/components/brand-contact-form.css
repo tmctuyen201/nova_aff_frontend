@@ -1,0 +1,42 @@
+/* Brand Contact Form Styles */
+.brand-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.brand-contact-form h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.brand-contact-form-submit {
+  background: #da251d;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-top: 10px;
+}
+
+.brand-contact-form-submit:hover {
+  background: #b91e15;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .brand-contact-form {
+    gap: 16px;
+  }
+
+  .brand-contact-form h3 {
+    font-size: 20px;
+  }
+}

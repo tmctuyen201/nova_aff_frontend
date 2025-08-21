@@ -1,0 +1,238 @@
+/* AdminHeader Styles - Based on Figma Design */
+.admin-header {
+  width: 100%;
+  height: 100px;
+  background: #ffffff;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.admin-header-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 55px;
+}
+
+/* Left Section - Back Button */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.back-button {
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
+}
+
+.back-button:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.back-button svg {
+  width: 30px;
+  height: 28.5px;
+}
+
+/* Center Section - Share Button */
+.header-center {
+  display: flex;
+  align-items: center;
+}
+
+.share-button {
+  width: 139px;
+  height: 46px;
+  background: #4285f4;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  transition: all 0.2s ease;
+  padding: 5px 17px;
+}
+
+.share-button:hover {
+  background: #3367d6;
+  transform: translateY(-1px);
+}
+
+.share-button svg {
+  width: 30px;
+  height: 30px;
+}
+
+.share-button span {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+/* Right Section - Action Buttons */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 60px; /* Spacing between buttons based on Figma */
+}
+
+.action-btn {
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
+}
+
+.action-btn:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* Avatar */
+.header-avatar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.avatar-image {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.avatar-image:hover {
+  transform: scale(1.05);
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 120px;
+  z-index: 1001;
+  margin-top: 8px;
+  animation: fadeIn 0.2s ease;
+}
+
+.dropdown-menu button {
+  width: 100%;
+  padding: 12px 16px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #333333;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-menu button:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-menu button:first-child {
+  border-radius: 8px 8px 0 0;
+}
+
+.dropdown-menu button:last-child {
+  border-radius: 0 0 8px 8px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .admin-header-container {
+    padding: 0 30px;
+  }
+
+  .header-right {
+    gap: 40px;
+  }
+
+  .share-button {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-header {
+    height: 80px;
+  }
+
+  .admin-header-container {
+    height: 80px;
+    padding: 0 20px;
+  }
+
+  .header-right {
+    gap: 20px;
+  }
+
+  .share-button {
+    width: 100px;
+    height: 36px;
+    font-size: 14px;
+    gap: 8px;
+  }
+
+  .share-button svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .action-btn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .avatar-image {
+    width: 32px;
+    height: 32px;
+  }
+}

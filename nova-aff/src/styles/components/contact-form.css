@@ -1,0 +1,30 @@
+/* Contact Form Styles */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form-submit {
+  background: #da251d;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-top: 10px;
+}
+
+.contact-form-submit:hover {
+  background: #b91e15;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-form {
+    gap: 16px;
+  }
+}
