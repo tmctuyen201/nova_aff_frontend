@@ -30,37 +30,37 @@ const Navbar = () => {
 
   const menuItems = {
     brand: {
-      title: "Brand",
+      title: "Nhãn hàng",
       items: [
-        { name: "Overview", path: "/brand/overview" },
-        { name: "Affiliate Marketing", path: "/brand/affiliate" },
-        { name: "Influencer Marketing", path: "/brand/influencer" },
-        { name: "Influencer Booking", path: "/brand/booking" },
-        { name: "User-Generated Content", path: "/brand/ugc" },
+        { name: "Tổng quan", path: "/brand/overview" },
+        { name: "Tiếp Thị Liên Kết", path: "/brand/affiliate" },
+        { name: "Tiếp Thị Người Ảnh Hưởng", path: "/brand/influencer" },
+        { name: "Dịch vụ Booking Influencer", path: "/brand/booking" },
+        { name: "Nội Dung Do Người Dùng Tạo", path: "/brand/ugc" },
       ],
     },
     about: {
-      title: "About NOVA AFF",
+      title: "Về NovaAFF",
       items: [
-        { name: "About us", path: "/about" },
-        { name: "Contact", path: "/contact" },
-        { name: "Support Center", path: "/support" },
+        { name: "Về chúng tôi", path: "/about" },
+        { name: "Liên hệ", path: "/contact" },
+        { name: "Trung tâm trợ giúp", path: "/support" },
       ],
     },
     creator: {
-      title: "Creator",
+      title: "Nhà sáng tạo",
       items: [
-        { name: "Overview", path: "/creator/overview" },
-        { name: "Explore Campaigns", path: "/creator/campaigns" },
-        { name: "Creator Tools", path: "/creator/tools" },
+        { name: "Tổng Quan", path: "/creator/overview" },
+        { name: "Khám Phá Chiến Dịch", path: "/creator/campaigns" },
+        { name: "Công cụ dành cho nhà sáng tạo", path: "/creator/tools" },
       ],
     },
     publisher: {
-      title: "Publisher",
+      title: "Nhà xuất bản",
       items: [
-        { name: "Overview", path: "/publisher/overview" },
-        { name: "Explore Campaigns", path: "/publisher/campaigns" },
-        { name: "Creator Tools", path: "/publisher/tools" },
+        { name: "Tổng quan", path: "/publisher/overview" },
+        { name: "Khám phá chiến dịch", path: "/publisher/campaigns" },
+        { name: "Công cụ dành cho nhà sáng tạo", path: "/publisher/tools" },
       ],
     },
     explore: {

@@ -31,30 +31,30 @@ const BrandOverviewPage = () => {
     {
       id: 1,
       image: "/optimized-revenue.jpg",
-      title: "Optimized Revenue Streams",
+      title: "Tăng trưởng Doanh thu Bền vững",
       description:
-        "Unlock multiple revenue sources with our all-in-one solutions. From affiliate marketing to influencer partnerships, we ensure your brand earns from every channel.",
+        "Khai thác tối đa tiềm năng bán hàng qua các giải pháp Affiliate Marketing hiệu suất cao. Chúng tôi biến nội dung sáng tạo của KOC/KOL thành động lực tăng trưởng doanh số trực tiếp, giúp bạn đạt được lợi tức đầu tư (ROI) hấp dẫn.",
     },
     {
       id: 2,
       image: "/enhanced-visibility.jpg",
-      title: "Enhanced Brand Visibility",
+      title: "Tối ưu Chi phí & Nguồn lực",
       description:
-        "Boost your brand presence with our strategic marketing methods. We connect you with the right audience to expand reach and drive deeper engagement.",
+        "Tiếp cận giải pháp marketing hiệu quả với chi phí linh hoạt, phù hợp với ngân sách của doanh nghiệp SMEs. Nền tảng tự động hóa của chúng tôi giúp bạn tiết kiệm thời gian, giảm thiểu quy trình thủ công và tập trung vào hoạt động kinh doanh cốt lõi.",
     },
     {
       id: 3,
       image: "/data-insights.jpg",
-      title: "Data-Driven Insights",
+      title: "Quyết định dựa trên Dữ liệu",
       description:
-        "Make smarter decisions with our advanced analytics. We deliver meaningful, actionable insights to help you optimize campaigns and leverage every data opportunity.",
+        "Đưa ra quyết định kinh doanh sáng suốt với hệ thống phân tích và báo cáo minh bạch của chúng tôi. Chúng tôi cung cấp dữ liệu chi tiết về hiệu quả chiến dịch theo thời gian thực, giúp bạn hiểu rõ hành vi khách hàng và tối ưu hóa chiến lược liên tục.",
     },
     {
       id: 4,
       image: "/tailored-strategies.jpg",
-      title: "Tailored Marketing Strategies",
+      title: "Tiếp cận Đúng Khách hàng Mục tiêu",
       description:
-        "Our personalized marketing strategies are designed to meet your unique brand goals. We offer customized solutions that are tailored for your target audience.",
+        "Kết nối thương hiệu của bạn với đúng tệp khách hàng thông qua mạng lưới KOC/KOL đa dạng và đã được xác thực. Chúng tôi giúp bạn lan tỏa thông điệp một cách tự nhiên và đáng tin cậy, xây dựng cộng đồng và tăng cường sự gắn kết với thương hiệu.",
     },
   ];
 
@@ -92,21 +92,17 @@ const BrandOverviewPage = () => {
         <div className={styles.heroContainer}>
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>
-              Let Nova AFF Guide Your Brand to Success
+              Cùng NovaAFF kiến tạo bứt phá cho thương hiệu của bạn
             </h1>
             <p className={styles.heroDescription}>
-              We empower brands and advertisers to develop smart growth
-              strategies in the digital era. With our optimized technology
-              platform, Nova AFF helps you reach the right audience at the right
-              time — maximizing the impact of every campaign.
-              <br />
-              <br />
-              Our automation tools, performance analytics, and diverse partner
-              network are the keys to unlocking your brand's full potential and
-              delivering long-term, sustainable results.
+              Chúng tôi trao quyền cho các doanh nghiệp SMEs phát triển mạnh mẽ
+              trong kỷ nguyên số. Bằng cách kết hợp công nghệ tự động hóa, chiến
+              lược dữ liệu và mạng lưới KOC/KOL chất lượng, chúng tôi giúp bạn
+              tối đa hóa tiềm năng thương hiệu và thúc đẩy tăng trưởng doanh thu
+              vượt trội.
             </p>
             <Link to="/contact" className={styles.ctaButton}>
-              <span>Talk to Our Team</span>
+              <span>Liên hệ với chúng tôi</span>
               <div className={styles.buttonIcon}>
                 <svg width="11" height="19" viewBox="0 0 11 19" fill="none">
                   <path
@@ -121,7 +117,10 @@ const BrandOverviewPage = () => {
             </Link>
           </div>
           <div className={styles.heroImage}>
-            <img src="/brand-overview-hero.jpg" alt="Brand Overview" />
+            <img
+              src="/src/assets/images/brand-overview-hero.png"
+              alt="Brand Overview"
+            />
           </div>
         </div>
       </section>
@@ -130,7 +129,7 @@ const BrandOverviewPage = () => {
       <section className={styles.featuresSection}>
         <div className={styles.featuresContainer}>
           <h2 className={styles.featuresTitle}>
-            Maximize Your Brand's Full Potential
+            Tối đa hóa tiềm năng đầy đủ của thương hiệu của bạn
           </h2>
           <div className={styles.featuresGrid}>
             {features.map((feature) => (
@@ -196,17 +195,19 @@ const BrandOverviewPage = () => {
       <section className={styles.contactFormSection}>
         <div className={styles.contactFormContainer}>
           <div className={styles.contactFormContent}>
-            <h2 className={styles.contactFormTitle}>See How We Can Help You</h2>
+            <h2 className={styles.contactFormTitle}>
+              Xem chúng tôi có thể giúp gì cho bạn
+            </h2>
             <p className={styles.contactFormSubtitle}>
-              Complete the contact form below and start your journey toward
-              strategic partnership and unprecedented growth!
+              Hoàn thành biểu mẫu liên hệ dưới đây và bắt đầu hành trình của bạn
+              đến mối quan hệ hợp tác chiến lược và tăng trưởng vượt trội!
             </p>
           </div>
           <div className={styles.contactFormWrapper}>
             <form className={styles.contactForm} onSubmit={handleSubmit}>
               <div className={styles.formRow}>
                 <div className={styles.formGroup}>
-                  <label>Your name *</label>
+                  <label>Tên của bạn *</label>
                   <input
                     type="text"
                     name="name"
@@ -218,7 +219,7 @@ const BrandOverviewPage = () => {
                 </div>
 
                 <div className={styles.formGroup}>
-                  <label>Email address *</label>
+                  <label>Địa chỉ email *</label>
                   <input
                     type="email"
                     name="email"
@@ -232,7 +233,7 @@ const BrandOverviewPage = () => {
 
               <div className={styles.formRow}>
                 <div className={styles.formGroup}>
-                  <label>Phone number *</label>
+                  <label>Số điện thoại *</label>
                   <input
                     type="tel"
                     name="phone"
@@ -244,7 +245,7 @@ const BrandOverviewPage = () => {
                 </div>
 
                 <div className={styles.formGroup}>
-                  <label>You are *</label>
+                  <label>Bạn là *</label>
                   <div className={styles.selectWrapper}>
                     <select
                       name="userType"
@@ -252,11 +253,11 @@ const BrandOverviewPage = () => {
                       onChange={handleChange}
                       required
                     >
-                      <option value="">You are a KOL or KOC</option>
-                      <option value="brand">Brand Representative</option>
-                      <option value="advertiser">Advertiser</option>
-                      <option value="agency">Marketing Agency</option>
-                      <option value="startup">Startup</option>
+                      <option value="">Bạn là KOL hoặc KOC</option>
+                      <option value="brand">Đại diện thương hiệu</option>
+                      <option value="advertiser">Người đặt quảng cáo</option>
+                      <option value="agency">Công ty tiếp thị</option>
+                      <option value="startup">Doanh nghiệp mới</option>
                     </select>
                     <div className={styles.selectArrow}>
                       <svg width="14" height="6" viewBox="0 0 14 6" fill="none">
@@ -275,7 +276,7 @@ const BrandOverviewPage = () => {
 
               <div className={styles.formRow}>
                 <div className={styles.formGroup}>
-                  <label>Your Brand *</label>
+                  <label>Tên thương hiệu của bạn *</label>
                   <input
                     type="text"
                     name="brand"
@@ -287,7 +288,7 @@ const BrandOverviewPage = () => {
                 </div>
 
                 <div className={styles.formGroup}>
-                  <label>Your Website or Online Store</label>
+                  <label>Trang web hoặc cửa hàng trực tuyến của bạn</label>
                   <input
                     type="url"
                     name="website"
@@ -299,7 +300,7 @@ const BrandOverviewPage = () => {
               </div>
 
               <div className={`${styles.formGroup} ${styles.fullWidth}`}>
-                <label>Describe your needs in details *</label>
+                <label>Mô tả nhu cầu của bạn chi tiết *</label>
                 <textarea
                   name="description"
                   value={formData.description}
@@ -311,7 +312,7 @@ const BrandOverviewPage = () => {
               </div>
 
               <button type="submit" className={styles.submitButton}>
-                SEND MESSAGE
+                Gửi tin nhắn
               </button>
             </form>
           </div>

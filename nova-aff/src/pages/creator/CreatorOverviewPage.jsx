@@ -31,16 +31,16 @@ const CreatorOverviewPage = () => {
       <section className={styles.heroSection}>
         <div className={styles.heroContent}>
           <div className={styles.heroText}>
-            <h1>Unlock Growth with NovaAFF's Affiliate Marketing Solutions</h1>
+            <h1>Nơi sự sáng tạo của bạn đáp ứng những cơ hội không giới hạn</h1>
             <p>
-              Empower your brand with NovaAFF – where strategic partnerships
-              meet cutting-edge affiliate marketing solutions. Our platform
-              connects you with a network of dynamic creators and influencers,
-              opening the door to scalable growth, increased engagement, and
-              unmatched market reach.
+              Là nền tảng tiên phong ứng dụng công nghệ, chúng tôi trao quyền
+              cho các KOC/KOL để tối đa hóa tầm ảnh hưởng và doanh thu. Các giải
+              pháp và công cụ của chúng tôi được thiết kế để giúp bạn phát triển
+              chuyên nghiệp, nâng cao chất lượng nội dung và biến đam mê của bạn
+              thành nguồn thu nhập bền vững.
             </p>
             <button className={styles.ctaButton}>
-              Sign Up Now
+              Đăng ký ngay
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path
                   d="M9 18L15 12L9 6"
@@ -54,7 +54,7 @@ const CreatorOverviewPage = () => {
           </div>
           <div className={styles.heroImage}>
             <img
-              src="/src/assets/images/creator-overview-hero.jpg"
+              src="/src/assets/images/creator-overview-hero.png"
               alt="Creator Overview Hero"
             />
           </div>
@@ -64,58 +64,65 @@ const CreatorOverviewPage = () => {
       {/* Features Section */}
       <section className={styles.featuresSection}>
         <div className={styles.featuresContainer}>
-          <h2>Unlock Brand Potential</h2>
+          <h2>Trao quyền cho hành trình sáng tạo của bạn</h2>
           <div className={styles.featuresGrid}>
             <div className={styles.featureCard}>
               <div className={styles.featureImage}>
                 <img
-                  src="/src/assets/images/expanded-reach.jpg"
+                  src="/src/assets/images/expanded-reach.webp"
                   alt="Expanded Reach"
                 />
               </div>
-              <h3>Expanded Reach</h3>
+              <h3>Tối đa hóa Cơ hội Thu nhập</h3>
               <p>
-                Leverage diverse audience segments through affiliate networks to
-                expand your brand's visibility and reach.
+                Kiếm tiền từ sự sáng tạo của bạn với đa dạng các cơ hội hợp tác,
+                từ chiến dịch Affiliate Marketing đến các job booking độc quyền
+                từ các thương hiệu uy tín.
               </p>
             </div>
             <div className={styles.featureCard}>
               <div className={styles.featureImage}>
                 <img
-                  src="/src/assets/images/performance-focused.jpg"
+                  src="/src/assets/images/performance-focused.webp"
                   alt="Performance Focused"
                 />
               </div>
-              <h3>Performance Focused</h3>
+              <h3>Phát triển bằng Chiến lược Dữ liệu</h3>
               <p>
-                Pay for results – our affiliate marketing model ensures your
-                investment drives real conversions and successful outcomes.
+                Vượt qua giới hạn của việc làm theo cảm tính. Chúng tôi cung cấp
+                các phân tích chuyên sâu về khán giả và hiệu suất nội dung, giúp
+                bạn xây dựng chiến lược phát triển kênh một cách bài bản và hiệu
+                quả.
               </p>
             </div>
             <div className={styles.featureCard}>
               <div className={styles.featureImage}>
                 <img
-                  src="/src/assets/images/cost-efficiency.jpg"
+                  src="/src/assets/images/cost-efficiency.webp"
                   alt="Cost Efficiency"
                 />
               </div>
-              <h3>Cost Efficiency</h3>
+              <h3>Nâng cao Kỹ năng & Chuyên môn</h3>
               <p>
-                Maximize your marketing budget by targeting performance-based
-                channels to ensure high return on investment.
+                Truy cập vào hệ thống đào tạo chuyên nghiệp và các tài nguyên
+                độc quyền như "Win Content Library" để nâng cao kỹ năng sáng
+                tạo. Chúng tôi cung cấp "công thức thành công" và định hướng rõ
+                ràng để bạn tự tin phát triển.
               </p>
             </div>
             <div className={styles.featureCard}>
               <div className={styles.featureImage}>
                 <img
-                  src="/src/assets/images/enhanced-credibility.jpg"
+                  src="/src/assets/images/enhanced-credibility.webp"
                   alt="Enhanced Credibility"
                 />
               </div>
-              <h3>Enhanced Credibility</h3>
+              <h3>Hỗ trợ Toàn diện & Cộng đồng</h3>
               <p>
-                Build trust and credibility by associating your brand with
-                reputable affiliates, boosting consumer recognition and loyalty.
+                Bạn không bao giờ đơn độc. Đội ngũ của NovaAFF luôn đồng hành hỗ
+                trợ, cung cấp các công cụ cần thiết và xây dựng một cộng đồng
+                KOC/KOL vững mạnh, nơi mọi người cùng nhau học hỏi và phát
+                triển.
               </p>
             </div>
           </div>
@@ -281,16 +288,16 @@ const CreatorOverviewPage = () => {
       <section className={styles.contactFormSection}>
         <div className={styles.contactContainer}>
           <div className={styles.contactInfo}>
-            <h2>See How We Can Help You</h2>
+            <h2>Xem chúng tôi có thể giúp gì cho bạn</h2>
             <p>
-              Complete the contact form below and start your journey toward
-              strategic partnership and unprecedented growth!
+              Hoàn thành biểu mẫu liên hệ dưới đây và bắt đầu hành trình của bạn
+              đến mối quan hệ hợp tác chiến lược và tăng trưởng vượt trội!
             </p>
           </div>
           <form className={styles.contactForm} onSubmit={handleSubmit}>
             <div className={styles.formRow}>
               <div className={styles.formGroup}>
-                <label htmlFor="name">Your name *</label>
+                <label htmlFor="name">Tên của bạn *</label>
                 <input
                   type="text"
                   id="name"
@@ -302,7 +309,7 @@ const CreatorOverviewPage = () => {
                 />
               </div>
               <div className={styles.formGroup}>
-                <label htmlFor="email">Email address *</label>
+                <label htmlFor="email">Địa chỉ email *</label>
                 <input
                   type="email"
                   id="email"
@@ -316,7 +323,7 @@ const CreatorOverviewPage = () => {
             </div>
             <div className={styles.formRow}>
               <div className={styles.formGroup}>
-                <label htmlFor="phone">Phone number *</label>
+                <label htmlFor="phone">Số điện thoại *</label>
                 <input
                   type="tel"
                   id="phone"
@@ -328,7 +335,7 @@ const CreatorOverviewPage = () => {
                 />
               </div>
               <div className={styles.formGroup}>
-                <label htmlFor="userType">You are *</label>
+                <label htmlFor="userType">Bạn là *</label>
                 <select
                   id="userType"
                   name="userType"
@@ -336,17 +343,17 @@ const CreatorOverviewPage = () => {
                   onChange={handleInputChange}
                   required
                 >
-                  <option value="">You are a KOL or KOC</option>
-                  <option value="kol">Key Opinion Leader (KOL)</option>
-                  <option value="koc">Key Opinion Consumer (KOC)</option>
-                  <option value="creator">Content Creator</option>
-                  <option value="influencer">Influencer</option>
+                  <option value="">Bạn là KOL hoặc KOC</option>
+                  <option value="kol">Người ảnh hưởng (KOL)</option>
+                  <option value="koc">Người tiêu dùng ảnh hưởng (KOC)</option>
+                  <option value="creator">Nhà sáng tạo nội dung</option>
+                  <option value="influencer">Người ảnh hưởng</option>
                 </select>
               </div>
             </div>
             <div className={styles.formRow}>
               <div className={styles.formGroup}>
-                <label htmlFor="brand">Your Brand *</label>
+                <label htmlFor="brand">Tên thương hiệu của bạn *</label>
                 <input
                   type="text"
                   id="brand"
@@ -358,7 +365,9 @@ const CreatorOverviewPage = () => {
                 />
               </div>
               <div className={styles.formGroup}>
-                <label htmlFor="website">Your Website or Online Store</label>
+                <label htmlFor="website">
+                  Trang web hoặc cửa hàng trực tuyến của bạn
+                </label>
                 <input
                   type="url"
                   id="website"
@@ -370,7 +379,7 @@ const CreatorOverviewPage = () => {
               </div>
             </div>
             <div className={`${styles.formGroup} ${styles.fullWidth}`}>
-              <label htmlFor="details">Describe your needs in details *</label>
+              <label htmlFor="details">Mô tả nhu cầu của bạn chi tiết *</label>
               <textarea
                 id="details"
                 name="details"
@@ -382,7 +391,7 @@ const CreatorOverviewPage = () => {
               ></textarea>
             </div>
             <button type="submit" className={styles.submitButton}>
-              SEND MESSAGE
+              Gửi tin nhắn
             </button>
           </form>
         </div>

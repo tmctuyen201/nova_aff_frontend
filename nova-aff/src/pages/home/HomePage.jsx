@@ -21,68 +21,59 @@ const HomePage = () => {
   // NOVA AFF Ecosystem services
   const ecosystemServices = [
     {
-      title: "Affiliate marketing",
+      title: "Giải pháp Affiliate Marketing",
       features: [
-        "Affiliate marketing for brands",
-        "TikTok Shop affiliate marketing",
+        "Tiếp thị liên kết qua Video hiệu suất cao với Mass KOC.",
+        "Tiếp thị liên kết qua Livestream hiệu suất cao với Mass KOC",
       ],
       imageSrc: affiliateMarketingImg,
     },
     {
       title: "Influencer Marketing",
       features: [
-        "Influencer booking service",
-        "User-generated content development",
+        "Dịch vụ Booking Top KOC/KOL",
+        "Phát triển nội dung do người dùng tạo",
       ],
       imageSrc: influencerMarketingImg,
     },
     {
-      title: "Software solutions for brands",
+      title: "Nền tảng Công nghệ & Dữ liệu",
       features: [
-        "Affiliate marketing for brands",
-        "TikTok Shop affiliate marketing",
+        "Hệ thống tracking và đo lường hiệu quả minh bạch (ROI, ROAS)",
+        "Báo cáo & Phân tích dữ liệu theo thời gian thực",
+        "Nền tảng quản lý chiến dịch 'All-in-one'",
       ],
       imageSrc: affiliateMarketingImg,
     },
     {
-      title: "Livestream solutions",
+      title: "Các giải pháp Livestream",
+      features: ["Sản xuất và vận hành", "Cung cấp cơ sở vật chất"],
+      imageSrc: affiliateMarketingImg,
+    },
+    {
+      title: "Chương trình Hợp tác & Kiếm tiền",
       features: [
-        "Affiliate marketing for brands",
-        "TikTok Shop affiliate marketing",
+        "Chiến dịch Affiliate Marketing (Video, Livestream)",
+        "Cơ hội Booking với các thương hiệu uy tín.",
       ],
       imageSrc: affiliateMarketingImg,
     },
     {
-      title: "Affiliate marketing program",
+      title: "Đào tạo & Phát triển Năng lực",
       features: [
-        "Affiliate marketing for brands",
-        "TikTok Shop affiliate marketing",
-      ],
-      imageSrc: affiliateMarketingImg,
-    },
-    {
-      title: "Idol Program",
-      features: [
-        "Affiliate marketing for brands",
-        "TikTok Shop affiliate marketing",
+        "Đào tạo kiến thức và 'công thức thành công' độc quyền",
+        "Cung cấp thư viện nội dung và kịch bản hiệu quả ('Win Content Library')",
       ],
       imageSrc: influencerMarketingImg,
     },
     {
-      title: "Monetization Tools",
+      title: "Công cụ & Hỗ trợ",
       features: [
-        "Affiliate marketing for brands",
-        "TikTok Shop affiliate marketing",
+        "Cung cấp công cụ tracking và đo lường hiệu suất cá nhân",
+        "Hệ thống dashboard báo cáo minh bạch, theo thời gian thực",
+        "Đội ngũ chuyên biệt hỗ trợ và chăm sóc cộng đồng.",
       ],
       imageSrc: affiliateMarketingImg,
-    },
-    {
-      title: "Influencer & Content Creator",
-      features: [
-        "Affiliate marketing for brands",
-        "TikTok Shop affiliate marketing",
-      ],
-      imageSrc: influencerMarketingImg,
     },
   ];
 
@@ -90,23 +81,24 @@ const HomePage = () => {
   const blogPosts = [
     {
       category: "Brands",
-      title: "5 Powerful Brand-Building Strategies in the Digital Age",
+      title:
+        "Sáng tạo nội dung “Win” và làm chủ thuật toán trang “For You Page”",
       excerpt:
-        "In today's digital landscape, building a strong brand goes far beyond just having a good logo or catchy slogan ....",
+        "Trong không gian số hiện nay, xây dựng thương hiệu mạnh mẽ vượt xa khỏi việc chỉ có logo hay slogan đẹp mắt ....",
       imageSrc: blogBrandsImg,
     },
     {
       category: "Affiliate Marketing",
-      title: "Affiliate Marketing 101: The Complete Beginner's Guide",
+      title: "Kiếm tiền với TikTok Affiliate: 7 chiến lược tăng thu nhập",
       excerpt:
-        "In today's digital landscape, building a strong brand goes far beyond just having a good logo or catchy slogan ....",
+        "Trong không gian số hiện nay, xây dựng thương hiệu mạnh mẽ vượt xa khỏi việc chỉ có logo hay slogan đẹp mắt ....",
       imageSrc: blogBrandsImg,
     },
     {
       category: "Influencer Marketing",
-      title: "Influencer Marketing in 2025: Trends, Tools & Tactics",
+      title: "Các chiến lược tăng follower Tiktok miễn phí & hiệu quả 100%",
       excerpt:
-        "In today's digital landscape, building a strong brand goes far beyond just having a good logo or catchy slogan ....",
+        "Trong không gian số hiện nay, xây dựng thương hiệu mạnh mẽ vượt xa khỏi việc chỉ có logo hay slogan đẹp mắt ....",
       imageSrc: blogBrandsImg,
     },
   ];
@@ -118,15 +110,19 @@ const HomePage = () => {
         <div className={styles.heroContainer}>
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>
-              Comprehensive Revenue Solutions for Brands
+              Tăng trưởng Doanh thu thông minh qua Affiliate Marketing
+              <br />
+              Giải pháp Marketing “Trẻ” cho Doanh Nghiệp “Trẻ”
             </h1>
             <p className={styles.heroDescription}>
-              We provide customized approaches for each audience to drive growth
-              — from optimizing monetization strategies to increasing audience
-              engagement.
+              NOVA AFF tiên phong ứng dụng công nghệ tự động và chiến lược dữ
+              liệu, giúp doanh nghiệp SMEs kết nối chính xác với KOC/KOL tiềm
+              năng. Chúng tôi kiến tạo những chiến dịch hiệu quả, đo lường minh
+              bạch, biến mỗi nội dung thành cỗ máy tăng trưởng doanh thu bền
+              vững.
             </p>
             <button className={styles.heroCta}>
-              Talk to Our Team
+              Tìm hiểu thêm
               <ArrowRight className={styles.arrowIcon} />
             </button>
           </div>
@@ -144,10 +140,10 @@ const HomePage = () => {
       <section className={styles.successSection}>
         <div className={styles.successContainer}>
           <div className={styles.successHeader}>
-            <h2 className={styles.successTitle}>Leading the Way to Success</h2>
+            <h2 className={styles.successTitle}>Mở lối thành công</h2>
             <p className={styles.successSubtitle}>
-              Learn how NOVA can help you unlock revenue growth potential for
-              your business.
+              Tìm hiểu cách NovaAFF giúp bạn nâng cao giá trị thương hiệu và
+              tiềm năng doanh thu cho doanh nghiệp của bạn.
             </p>
           </div>
 
@@ -162,14 +158,15 @@ const HomePage = () => {
                 />
               </div>
               <div className={styles.cardContent}>
-                <h3 className={styles.cardTitle}>For Brands</h3>
+                <h3 className={styles.cardTitle}>Dành cho thương hiệu</h3>
                 <p className={styles.cardDescription}>
-                  Increase sales in your target market and optimize your
-                  marketing efforts by connecting with our network. Build strong
-                  partnerships to accelerate remarkable growth!
+                  Tăng doanh số bán hàng tại thị trường mục tiêu và tối ưu các
+                  hoạt động tiếp thị của bạn bằng cách kết nối với mạng lưới của
+                  chúng tôi. Hãy tạo dựng mối quan hệ hợp tác mạnh mẽ để thúc
+                  đẩy tăng trưởng vượt trội!
                 </p>
                 <button className={styles.cardCta}>
-                  Talk to Our Team
+                  Tìm hiểu thêm
                   <ArrowRight className={styles.arrowIcon} />
                 </button>
               </div>
@@ -185,14 +182,14 @@ const HomePage = () => {
                 />
               </div>
               <div className={styles.cardContent}>
-                <h3 className={styles.cardTitle}>For Creators/Publishers</h3>
+                <h3 className={styles.cardTitle}>Dành cho người sáng tạo</h3>
                 <p className={styles.cardDescription}>
-                  Unlock limitless opportunities and earn generous commissions
-                  through exclusive campaigns while connecting with top local
-                  and global brands to turn your creativity into revenue.
+                  Tiếp cận những cơ hội vàng, kiếm tiền hoa hồng vô tận thông
+                  qua các chiến dịch độc quyền và kết nối với các thương hiệu đa
+                  dạng lĩnh vực để biến sự sáng tạo của bạn thành doanh thu.
                 </p>
                 <button className={`${styles.cardCta} ${styles.signupCta}`}>
-                  Sign Up Now
+                  Đăng ký
                   <ArrowRight className={styles.arrowIcon} />
                 </button>
               </div>
@@ -205,10 +202,10 @@ const HomePage = () => {
       <section className={styles.ecosystemSection}>
         <div className={styles.ecosystemContainer}>
           <div className={styles.ecosystemHeader}>
-            <h2 className={styles.ecosystemTitle}>NOVA AFF Ecosystem</h2>
+            <h2 className={styles.ecosystemTitle}>Hệ sinh thái NovaAFF</h2>
             <p className={styles.ecosystemSubtitle}>
-              Tailored solutions designed to unlock your potential and drive
-              revenue growth.
+              Các giải pháp được thiết kế riêng biệt, ứng dụng công nghệ và dữ
+              liệu để khai phá tiềm năng và bứt phá doanh thu.
             </p>
           </div>
 
@@ -238,19 +235,21 @@ const HomePage = () => {
       <section className={styles.infoSection}>
         <div className={styles.infoContainer}>
           <div className={styles.infoCard}>
-            <h3 className={styles.infoTitle}>For Brands</h3>
+            <h3 className={styles.infoTitle}>Dành cho Doanh nghiệp (SMEs)</h3>
             <p className={styles.infoDescription}>
-              NOVA AFF helps brands maximize their potential with a
-              comprehensive solution suite designed to drive revenue growth.
+              NovaAFF hỗ trợ các doanh nghiệp SMEs phát huy tối đa hiệu quả
+              marketing thông qua bộ giải pháp toàn diện, được tự động hóa và
+              tối ưu bằng chiến lược dữ liệu.
             </p>
           </div>
           <div className={styles.infoCard}>
-            <h3 className={styles.infoTitle}>For Content Creators</h3>
+            <h3 className={styles.infoTitle}>
+              Dành cho Nhà sáng tạo nội dung{" "}
+            </h3>
             <p className={styles.infoDescription}>
-              NOVA AFF provides content creators with tailored programs and
-              tools designed to maximize income growth and build personal
-              brands. Our solutions are created to accompany you on your journey
-              towards success.
+              NovaAFF cung cấp cho các nhà sáng tạo nội dung một hệ sinh thái hỗ
+              trợ toàn diện, từ công cụ, kiến thức đến cơ hội hợp tác, giúp bạn
+              phát triển sự nghiệp và tối đa hóa thu nhập một cách bền vững.
             </p>
           </div>
         </div>
@@ -259,7 +258,10 @@ const HomePage = () => {
       {/* Blog Section */}
       <section className={styles.blogSection}>
         <div className={styles.blogContainer}>
-          <h2 className={styles.blogTitle}>Become a Trendsetter with NOVA</h2>
+          <h2 className={styles.blogTitle}>
+            Không chỉ chạy theo trend - Một bước trở thành người tiên phong cùng
+            NOVA AFF
+          </h2>
 
           <div className={styles.blogGrid}>
             {blogPosts.map((post, index) => (
@@ -272,7 +274,7 @@ const HomePage = () => {
                   <h3 className={styles.blogCardTitle}>{post.title}</h3>
                   <p className={styles.blogCardExcerpt}>{post.excerpt}</p>
                   <button className={styles.blogReadMore}>
-                    Read more
+                    Xem thêm
                     <ArrowRight className={styles.arrowIcon} />
                   </button>
                 </div>
@@ -282,7 +284,7 @@ const HomePage = () => {
 
           <div className={styles.blogActions}>
             <button className={styles.seeMoreBtn}>
-              See more
+              Xem thêm
               <ArrowRight className={styles.arrowIcon} />
             </button>
           </div>

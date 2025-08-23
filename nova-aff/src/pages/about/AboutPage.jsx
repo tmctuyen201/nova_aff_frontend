@@ -12,8 +12,8 @@ const AboutPage = () => {
           <div className={styles.introContent}>
             <p className={styles.introSubtitle}>Giới thiệu về NOVA AFF</p>
             <h1 className={styles.introTitle}>
-              Trong một thế giới mà cuộc chơi marketing thường bị thống trị bởi
-              những "ông lớn", NovaAFF ra đời để phá vỡ rào cản đó.
+              Mang công nghệ vào chiến lược affiliate, tối ưu hóa chuyển đổi nhờ
+              phân tích dữ liệu chuyên sâu
             </h1>
           </div>
           <div className={styles.introImage}>
@@ -40,27 +40,30 @@ const AboutPage = () => {
             <h2 className={styles.storyTitle}>Câu chuyện của chúng tôi</h2>
             <div className={styles.storyText}>
               <p>
-                Được ươm mầm bởi những con người đầy khát vọng, NovaAFF ra đời
-                với sứ mệnh dân chủ hóa lĩnh vực tiếp thị – nơi mà mọi cá nhân,
-                dù nhỏ bé hay không chuyên, đều có cơ hội tạo ra giá trị từ nỗ
-                lực sáng tạo của chính mình. NovaAFF không đơn thuần là một nền
-                tảng tiếp thị liên kết, mà là chiếc cầu nối giữa các thương hiệu
-                và cộng đồng người ảnh hưởng tiềm năng tại Đông Nam Á.
+                Được thành lập bởi một tập thể sáng lập trẻ, nhiệt huyết và am
+                hiểu sâu sắc về tiếp thị số, phân tích dữ liệu và công nghệ ,
+                NovaAFF ra đời từ một trăn trở lớn: làm thế nào để các doanh
+                nghiệp SMEs Việt Nam có thể bứt phá trên thị trường số với ngân
+                sách hạn chế?
               </p>
               <p>
-                Chúng tôi tin rằng trong một thế giới số đang phát triển với tốc
-                độ chóng mặt, cơ hội không nên chỉ thuộc về "ông lớn". Vì thế,
-                NovaAFF tập trung phát triển hạ tầng dễ tiếp cận, minh bạch và
-                hiệu quả tại các thị trường chiến lược như Việt Nam, Indonesia,
-                Thái Lan và Malaysia — nơi người dùng có thể bắt đầu kiếm tiền
-                từ tiếp thị chỉ với một chiếc điện thoại và kết nối internet.
+                Chúng tôi nhận thấy một khoảng trống thị trường, nơi các doanh
+                nghiệp loay hoay tìm kiếm giải pháp marketing hiệu quả, còn các
+                KOC/KOL tiềm năng lại thiếu công cụ và định hướng để tối ưu hóa
+                nội dung. Các phương pháp truyền thống thì thủ công, rời rạc và
+                kém hiệu quả. Chính vì vậy, NovaAFF được thành lập với sứ mệnh
+                tiên phong tích hợp công nghệ tự động hóa và chiến lược dữ liệu,
+                biến Affiliate Marketing thành một vũ khí chiến lược mạnh mẽ, dễ
+                tiếp cận cho mọi doanh nghiệp.
               </p>
               <p>
-                Với lòng biết ơn đối với sự tin tưởng từ người dùng, đối tác và
-                đội ngũ phát triển, NovaAFF cam kết theo đuổi tầm nhìn dài hạn:
-                trở thành nền tảng hàng đầu giúp mọi người tạo dựng sự nghiệp
-                trong lĩnh vực affiliate marketing – công bằng, bền vững và
-                truyền cảm hứng.
+                Tầm nhìn của chúng tôi là dẫn dắt ngành tiếp thị liên kết Việt
+                Nam bước sang một kỷ nguyên mới – nơi mọi quy trình được tự động
+                hóa, mọi quyết định đều dựa trên dữ liệu, và mọi chiến dịch đều
+                được tối ưu để mang lại hiệu quả cao nhất. Với chúng tôi, đây
+                không chỉ là một dự án khởi nghiệp, mà là hành trình của tâm
+                huyết và đam mê, mong muốn trở thành đối tác tăng trưởng đáng
+                tin cậy của doanh nghiệp Việt.
               </p>
             </div>
           </div>
@@ -86,20 +89,24 @@ const AboutPage = () => {
                     />
                   </svg>
                 </div>
-                <h3 className={styles.valueName}>Chính trực</h3>
+                <h3 className={styles.valueName}>Đổi mới & Sáng tạo</h3>
               </div>
               <div className={styles.valueItems}>
                 <div className={styles.valueItem}>
                   <div className={styles.bulletPoint}></div>
-                  <span>Xây dựng lòng tin bằng hành động thực tế</span>
+                  <span>Tiên phong công nghệ</span>
                 </div>
                 <div className={styles.valueItem}>
                   <div className={styles.bulletPoint}></div>
-                  <span>Minh bạch trong mọi quy trình và hợp tác</span>
+                  <span>Khuyến khích thử nghiệm</span>
                 </div>
                 <div className={styles.valueItem}>
                   <div className={styles.bulletPoint}></div>
-                  <span>Giữ vững đạo đức dù trong thử thách</span>
+                  <span>Học hỏi không ngừng</span>
+                </div>
+                <div className={styles.valueItem}>
+                  <div className={styles.bulletPoint}></div>
+                  <span>Tập trung vào kết quả</span>
                 </div>
               </div>
             </div>
@@ -117,20 +124,20 @@ const AboutPage = () => {
                     />
                   </svg>
                 </div>
-                <h3 className={styles.valueName}>Tạo giá trị thực</h3>
+                <h3 className={styles.valueName}>Hiệu suất & Dữ liệu</h3>
               </div>
               <div className={styles.valueItems}>
                 <div className={styles.valueItem}>
                   <div className={styles.bulletPoint}></div>
-                  <span>Hiểu rõ nhu cầu thực sự của người dùng</span>
+                  <span>Tư duy dựa trên dữ liệu</span>
                 </div>
                 <div className={styles.valueItem}>
                   <div className={styles.bulletPoint}></div>
-                  <span>Tập trung vào kết quả và hiệu quả</span>
+                  <span>Minh bạch và đo lường</span>
                 </div>
                 <div className={styles.valueItem}>
                   <div className={styles.bulletPoint}></div>
-                  <span>Đo lường bằng giá trị tạo ra</span>
+                  <span>Tối ưu hóa liên tục</span>
                 </div>
               </div>
             </div>
@@ -148,20 +155,24 @@ const AboutPage = () => {
                     />
                   </svg>
                 </div>
-                <h3 className={styles.valueName}>Tư duy tăng trưởng</h3>
+                <h3 className={styles.valueName}>Kết nối & Nhân văn</h3>
               </div>
               <div className={styles.valueItems}>
                 <div className={styles.valueItem}>
                   <div className={styles.bulletPoint}></div>
-                  <span>Luôn học hỏi và đổi mới</span>
+                  <span>Đồng hành cùng đối tác</span>
                 </div>
                 <div className={styles.valueItem}>
                   <div className={styles.bulletPoint}></div>
-                  <span>Đón nhận thử thách như một cơ hội</span>
+                  <span>Phối hợp linh hoạt</span>
                 </div>
                 <div className={styles.valueItem}>
                   <div className={styles.bulletPoint}></div>
-                  <span>Chia sẻ, dẫn dắt và truyền cảm hứng</span>
+                  <span>Xây dựng môi trường tin cậy</span>
+                </div>
+                <div className={styles.valueItem}>
+                  <div className={styles.bulletPoint}></div>
+                  <span>Cùng nhau phát triển</span>
                 </div>
               </div>
             </div>
