@@ -117,10 +117,7 @@ const BrandOverviewPage = () => {
             </Link>
           </div>
           <div className={styles.heroImage}>
-            <img
-              src="/src/assets/images/brand-overview-hero.png"
-              alt="Brand Overview"
-            />
+            <img src="/brand-overview-hero.png" alt="Brand Overview" />
           </div>
         </div>
       </section>

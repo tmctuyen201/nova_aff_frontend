@@ -53,10 +53,7 @@ const CreatorOverviewPage = () => {
             </button>
           </div>
           <div className={styles.heroImage}>
-            <img
-              src="/src/assets/images/creator-overview-hero.png"
-              alt="Creator Overview Hero"
-            />
+            <img src="/creator-overview-hero.png" alt="Creator Overview Hero" />
           </div>
         </div>
       </section>
@@ -68,10 +65,7 @@ const CreatorOverviewPage = () => {
           <div className={styles.featuresGrid}>
             <div className={styles.featureCard}>
               <div className={styles.featureImage}>
-                <img
-                  src="/src/assets/images/expanded-reach.webp"
-                  alt="Expanded Reach"
-                />
+                <img src="/expanded-reach.webp" alt="Expanded Reach" />
               </div>
               <h3>Tối đa hóa Cơ hội Thu nhập</h3>
               <p>
@@ -83,7 +77,7 @@ const CreatorOverviewPage = () => {
             <div className={styles.featureCard}>
               <div className={styles.featureImage}>
                 <img
-                  src="/src/assets/images/performance-focused.webp"
+                  src="/performance-focused.webp"
                   alt="Performance Focused"
                 />
               </div>
@@ -97,10 +91,7 @@ const CreatorOverviewPage = () => {
             </div>
             <div className={styles.featureCard}>
               <div className={styles.featureImage}>
-                <img
-                  src="/src/assets/images/cost-efficiency.webp"
-                  alt="Cost Efficiency"
-                />
+                <img src="/cost-efficiency.webp" alt="Cost Efficiency" />
               </div>
               <h3>Nâng cao Kỹ năng & Chuyên môn</h3>
               <p>
@@ -113,7 +104,7 @@ const CreatorOverviewPage = () => {
             <div className={styles.featureCard}>
               <div className={styles.featureImage}>
                 <img
-                  src="/src/assets/images/enhanced-credibility.webp"
+                  src="/enhanced-credibility.webp"
                   alt="Enhanced Credibility"
                 />
               </div>
@@ -137,7 +128,7 @@ const CreatorOverviewPage = () => {
             <div className={styles.serviceItem}>
               <div className={styles.serviceImage}>
                 <img
-                  src="/src/assets/images/create-campaign.jpg"
+                  src="/create-campaign.jpg"
                   alt="Create an affiliate campaign"
                 />
               </div>
@@ -159,17 +150,14 @@ const CreatorOverviewPage = () => {
               </div>
               <div className={styles.serviceImage}>
                 <img
-                  src="/src/assets/images/affiliate-recruitment.jpg"
+                  src="/affiliate-recruitment.jpg"
                   alt="Affiliate recruitment"
                 />
               </div>
             </div>
             <div className={styles.serviceItem}>
               <div className={styles.serviceImage}>
-                <img
-                  src="/src/assets/images/monitor-performance.jpg"
-                  alt="Monitor performance"
-                />
+                <img src="/monitor-performance.jpg" alt="Monitor performance" />
               </div>
               <div className={styles.serviceContent}>
                 <h3>Monitor performance</h3>
@@ -189,7 +177,7 @@ const CreatorOverviewPage = () => {
               </div>
               <div className={styles.serviceImage}>
                 <img
-                  src="/src/assets/images/commission-management.jpg"
+                  src="/commission-management.jpg"
                   alt="Commission management"
                 />
               </div>
@@ -205,7 +193,7 @@ const CreatorOverviewPage = () => {
           <div className={styles.blogGrid}>
             <article className={styles.blogCard}>
               <div className={styles.blogImage}>
-                <img src="/src/assets/images/blog-brands.jpg" alt="Blog post" />
+                <img src="/blog-brands.jpg" alt="Blog post" />
               </div>
               <div className={styles.blogContent}>
                 <span className={styles.blogCategory}>Brands</span>
@@ -230,7 +218,7 @@ const CreatorOverviewPage = () => {
             </article>
             <article className={styles.blogCard}>
               <div className={styles.blogImage}>
-                <img src="/src/assets/images/blog-brands.jpg" alt="Blog post" />
+                <img src="/blog-brands.jpg" alt="Blog post" />
               </div>
               <div className={styles.blogContent}>
                 <span className={styles.blogCategory}>Affiliate Marketing</span>
@@ -255,7 +243,7 @@ const CreatorOverviewPage = () => {
             </article>
             <article className={styles.blogCard}>
               <div className={styles.blogImage}>
-                <img src="/src/assets/images/blog-brands.jpg" alt="Blog post" />
+                <img src="/blog-brands.jpg" alt="Blog post" />
               </div>
               <div className={styles.blogContent}>
                 <span className={styles.blogCategory}>
