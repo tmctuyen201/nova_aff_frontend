@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import AuthButton from "../../components/ui/AuthButton";
 import styles from "../../styles/pages/brand-overview.module.css";
 
 const BrandOverviewPage = () => {
@@ -101,20 +102,32 @@ const BrandOverviewPage = () => {
               tối đa hóa tiềm năng thương hiệu và thúc đẩy tăng trưởng doanh thu
               vượt trội.
             </p>
-            <Link to="/contact" className={styles.ctaButton}>
-              <span>Liên hệ với chúng tôi</span>
-              <div className={styles.buttonIcon}>
-                <svg width="11" height="19" viewBox="0 0 11 19" fill="none">
-                  <path
-                    d="M1 1L10 9.5L1 18"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
-            </Link>
+            <div className={styles.ctaButtons}>
+              <AuthButton
+                className={styles.ctaButton}
+                variant="dashboard"
+                showModal={true}
+              >
+                <span>Bắt đầu ngay</span>
+                <div className={styles.buttonIcon}>
+                  <svg width="11" height="19" viewBox="0 0 11 19" fill="none">
+                    <path
+                      d="M1 1L10 9.5L1 18"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+              </AuthButton>
+              <Link
+                to="/contact"
+                className={`${styles.ctaButton} ${styles.secondary}`}
+              >
+                <span>Liên hệ với chúng tôi</span>
+              </Link>
+            </div>
           </div>
           <div className={styles.heroImage}>
             <img src="/brand-overview-hero.png" alt="Brand Overview" />

@@ -180,38 +180,16 @@ const AppRouter = () => {
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/support" element={<SupportPage />} />
-                {/* Brand Routes - Protected */}
-                <Route
-                  path="/brand"
-                  element={
-                    <ProtectedRoute allowedRoles={["brand"]}>
-                      <BrandPage />
-                    </ProtectedRoute>
-                  }
-                />
-                <Route
-                  path="/brand/overview"
-                  element={
-                    <ProtectedRoute allowedRoles={["brand"]}>
-                      <BrandOverviewPage />
-                    </ProtectedRoute>
-                  }
-                />
+                {/* Brand Routes - Public Overview, Protected Actions */}
+                <Route path="/brand" element={<BrandPage />} />
+                <Route path="/brand/overview" element={<BrandOverviewPage />} />
                 <Route
                   path="/brand/affiliate"
-                  element={
-                    <ProtectedRoute allowedRoles={["brand"]}>
-                      <AffiliateMarketingPage />
-                    </ProtectedRoute>
-                  }
+                  element={<AffiliateMarketingPage />}
                 />
                 <Route
                   path="/brand/influencer"
-                  element={
-                    <ProtectedRoute allowedRoles={["brand"]}>
-                      <InfluencerMarketingPage />
-                    </ProtectedRoute>
-                  }
+                  element={<InfluencerMarketingPage />}
                 />
                 <Route
                   path="/brand/booking"
@@ -230,22 +208,14 @@ const AppRouter = () => {
                   }
                 />
 
-                {/* Creator Routes - Protected */}
+                {/* Creator Routes - Public Overview, Protected Tools */}
                 <Route
                   path="/creator/overview"
-                  element={
-                    <ProtectedRoute allowedRoles={["creator"]}>
-                      <CreatorOverviewPage />
-                    </ProtectedRoute>
-                  }
+                  element={<CreatorOverviewPage />}
                 />
                 <Route
                   path="/creator/campaigns"
-                  element={
-                    <ProtectedRoute allowedRoles={["creator"]}>
-                      <ExploreCampaignsPage />
-                    </ProtectedRoute>
-                  }
+                  element={<ExploreCampaignsPage />}
                 />
                 <Route
                   path="/creator/tools"
@@ -256,22 +226,14 @@ const AppRouter = () => {
                   }
                 />
 
-                {/* Publisher Routes - Available to creators */}
+                {/* Publisher Routes - Public Overview, Protected Tools */}
                 <Route
                   path="/publisher/overview"
-                  element={
-                    <ProtectedRoute allowedRoles={["creator"]}>
-                      <PublisherOverviewPage />
-                    </ProtectedRoute>
-                  }
+                  element={<PublisherOverviewPage />}
                 />
                 <Route
                   path="/publisher/campaigns"
-                  element={
-                    <ProtectedRoute allowedRoles={["creator"]}>
-                      <PublisherExploreCampaignsPage />
-                    </ProtectedRoute>
-                  }
+                  element={<PublisherExploreCampaignsPage />}
                 />
                 <Route
                   path="/publisher/tools"

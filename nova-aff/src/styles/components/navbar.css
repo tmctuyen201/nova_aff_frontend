@@ -122,7 +122,8 @@
   gap: 16px;
 }
 
-.start-button {
+.start-button,
+.dashboard-button {
   width: 100px;
   height: 44px;
   border-radius: 25px;
@@ -134,10 +135,17 @@
   font-weight: 700;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.start-button:hover {
+.start-button:hover,
+.dashboard-button:hover {
   background: #b91e15;
+  color: #fff;
+  text-decoration: none;
 }
 
 .language-selector {
@@ -234,7 +242,8 @@
     display: none;
   }
 
-  .start-button {
+  .start-button,
+  .dashboard-button {
     width: 80px;
     height: 36px;
     font-size: 16px;
@@ -256,7 +265,8 @@
     height: 50px;
   }
 
-  .start-button {
+  .start-button,
+  .dashboard-button {
     width: 70px;
     height: 32px;
     font-size: 14px;

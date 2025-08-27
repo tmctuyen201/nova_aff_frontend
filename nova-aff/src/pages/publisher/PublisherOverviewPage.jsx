@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AuthButton from "../../components/ui/AuthButton";
 import styles from "../../styles/pages/publisher-overview.module.css";
 
 const PublisherOverviewPage = () => {
@@ -37,7 +38,11 @@ const PublisherOverviewPage = () => {
               publisher solutions. Access premium advertisers, advanced
               tracking, and competitive commission rates.
             </p>
-            <button className={styles.ctaButton}>
+            <AuthButton
+              className={styles.ctaButton}
+              variant="dashboard"
+              showModal={true}
+            >
               Start Earning
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path
@@ -48,7 +53,7 @@ const PublisherOverviewPage = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-            </button>
+            </AuthButton>
           </div>
           <div className={styles.heroImage}>
             <img

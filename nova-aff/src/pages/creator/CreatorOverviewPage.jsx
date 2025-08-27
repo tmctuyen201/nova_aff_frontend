@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AuthButton from "../../components/ui/AuthButton";
 import styles from "../../styles/pages/creator-overview.module.css";
 
 const CreatorOverviewPage = () => {
@@ -39,7 +40,11 @@ const CreatorOverviewPage = () => {
               chuyên nghiệp, nâng cao chất lượng nội dung và biến đam mê của bạn
               thành nguồn thu nhập bền vững.
             </p>
-            <button className={styles.ctaButton}>
+            <AuthButton
+              className={styles.ctaButton}
+              variant="dashboard"
+              showModal={true}
+            >
               Đăng ký ngay
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path
@@ -50,7 +55,7 @@ const CreatorOverviewPage = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-            </button>
+            </AuthButton>
           </div>
           <div className={styles.heroImage}>
             <img src="/creator-overview-hero.png" alt="Creator Overview Hero" />

@@ -4,12 +4,14 @@ import ChevronDown from "../../assets/icons/ChevronDown";
 import UKFlag from "../../assets/icons/UKFlag";
 import VNFlag from "../../assets/icons/VNFlag";
 import LoginModal from "../ui/LoginModal";
+import { useAuth } from "../../hooks/useAuth";
 import "../../styles/components/navbar.css";
 
 const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [showLoginModal, setShowLoginModal] = useState(false);
   const navigate = useNavigate();
+  const { isAuthenticated, user, getDashboardLink } = useAuth();
 
   const toggleDropdown = (dropdownName) => {
     setActiveDropdown(activeDropdown === dropdownName ? null : dropdownName);
@@ -118,9 +120,15 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-actions">
-          <button className="start-button" onClick={handleStartClick}>
-            Start
-          </button>
+          {isAuthenticated ? (
+            <Link to={getDashboardLink()} className="dashboard-button">
+              Dashboard
+            </Link>
+          ) : (
+            <button className="start-button" onClick={handleStartClick}>
+              Start
+            </button>
+          )}
 
           <div className="language-selector">
             <button

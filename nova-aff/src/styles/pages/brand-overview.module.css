@@ -46,6 +46,12 @@
   margin: 0 0 28px 0;
 }
 
+.ctaButtons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
 .ctaButton {
   display: inline-flex;
   align-items: center;
@@ -62,6 +68,19 @@
   line-height: 22px;
   padding: 0 40px;
   transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.ctaButton.secondary {
+  background-color: transparent;
+  color: #ff5064;
+  border: 2px solid #ff5064;
+}
+
+.ctaButton.secondary:hover {
+  background-color: #ff5064;
+  color: #ffffff;
 }
 
 .ctaButton:hover {

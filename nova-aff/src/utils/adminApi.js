@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:8000/api";
+const API_BASE_URL = "https://novaaff.id.vn/api";
 
 const getAuthHeaders = () => {
   // Tạm thời không gửi token cho admin APIs
