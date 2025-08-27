@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:8000/api";
+const API_BASE_URL = "https://novaaff.id.vn/api";
 
 // Helper function to make API requests
 const apiRequest = async (endpoint, options = {}) => {
