@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import ChevronDown from "../../assets/icons/ChevronDown";
 import UKFlag from "../../assets/icons/UKFlag";
+import VNFlag from "../../assets/icons/VNFlag";
 import LoginModal from "../ui/LoginModal";
 import "../../styles/components/navbar.css";
 
@@ -126,19 +127,19 @@ const Navbar = () => {
               className="language-button"
               onClick={() => toggleDropdown("language")}
             >
-              <UKFlag className="flag-icon" />
+              <VNFlag className="flag-icon" />
               <ChevronDown className="dropdown-icon" />
             </button>
 
             {activeDropdown === "language" && (
               <div className="language-dropdown">
                 <div className="language-option">
-                  <UKFlag className="flag-icon" />
-                  <span>EN</span>
+                  <VNFlag className="flag-icon" />
+                  <span>VI</span>
                 </div>
                 <div className="language-option">
                   <UKFlag className="flag-icon" />
-                  <span>VI</span>
+                  <span>EN</span>
                 </div>
               </div>
             )}

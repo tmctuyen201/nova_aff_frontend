@@ -13,7 +13,7 @@ const BlogPage = () => {
       title: "5 Powerful Brand-Building Strategies in the Digital Age",
       excerpt:
         "In today's digital landscape, building a strong brand goes far beyond just having a good logo or catchy slogan....",
-      image: blogImage,
+      image: "5 Powerful brand building.png",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ const BlogPage = () => {
       title: "Brand Storytelling: How to Connect with Customers Emotionally",
       excerpt:
         "In today's digital landscape, building a strong brand goes far beyond just having a good logo or catchy slogan....",
-      image: blogImage,
+      image: "Brand storyteling.png",
     },
     {
       id: 3,
@@ -29,7 +29,7 @@ const BlogPage = () => {
       title: "Brand Awareness vs. Brand Loyalty — Where Should You Focus?",
       excerpt:
         "In today's digital landscape, building a strong brand goes far beyond just having a good logo or catchy slogan....",
-      image: blogImage,
+      image: "Braand awareness vs Brand loyalty.png",
     },
     {
       id: 4,
@@ -37,7 +37,7 @@ const BlogPage = () => {
       title: "Affiliate Marketing 101: The Complete Beginner's Guide",
       excerpt:
         "In today's digital landscape, building a strong brand goes far beyond just having a good logo or catchy slogan....",
-      image: blogImage,
+      image: "Affiliate Marketing 101.png",
     },
     {
       id: 5,
@@ -45,7 +45,7 @@ const BlogPage = () => {
       title: "How to Choose the Right Product for Higher Commissions",
       excerpt:
         "In today's digital landscape, building a strong brand goes far beyond just having a good logo or catchy slogan....",
-      image: blogImage,
+      image: "How to choose the right product.png",
     },
     {
       id: 6,
@@ -53,7 +53,7 @@ const BlogPage = () => {
       title: "Affiliate Is More Than Just Links: Content That Converts",
       excerpt:
         "In today's digital landscape, building a strong brand goes far beyond just having a good logo or catchy slogan....",
-      image: blogImage,
+      image: "Affiliate is more than just link.png",
     },
     {
       id: 7,
@@ -61,7 +61,7 @@ const BlogPage = () => {
       title: "Influencer Marketing in 2025: Trends, Tools & Tactics",
       excerpt:
         "In today's digital landscape, building a strong brand goes far beyond just having a good logo or catchy slogan....",
-      image: blogImage,
+      image: "Infiencer marketing in 2025.png",
     },
     {
       id: 8,
@@ -69,7 +69,7 @@ const BlogPage = () => {
       title: "Top 5 Mistakes Brands Make in Influencer Campaigns",
       excerpt:
         "In today's digital landscape, building a strong brand goes far beyond just having a good logo or catchy slogan....",
-      image: blogImage,
+      image: "Top 5 mistakes.png",
     },
     {
       id: 9,
@@ -78,7 +78,7 @@ const BlogPage = () => {
         "From KOCs to KOLs: How to Choose the Right Influencer for Your Brand",
       excerpt:
         "In today's digital landscape, building a strong brand goes far beyond just having a good logo or catchy slogan....",
-      image: blogImage,
+      image: "From KOC to KOL.png",
     },
   ];
 

@@ -1,0 +1,423 @@
+/* Brand Dashboard - Modern Layout */
+.brand-dashboard {
+  min-height: 100vh;
+  background: #f8fafc;
+  font-family: "Inter", sans-serif;
+}
+
+/* Dashboard Layout */
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Main Content Area */
+.dashboard-content {
+  flex: 1;
+  margin-left: 280px;
+  margin-top: 80px;
+  padding: 0;
+  background: #ffffff;
+  transition: margin-left 0.3s ease;
+  min-height: calc(100vh - 80px);
+}
+
+/* Dashboard Header */
+.dashboard-header {
+  background: #ffffff;
+  padding: 24px 32px;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-item {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1a202c;
+  margin: 0;
+}
+
+/* Dashboard Grid */
+.dashboard-grid {
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Stats Row */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+/* Stats Card */
+.stats-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.stats-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.stats-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+}
+
+.stats-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.stats-info {
+  flex: 1;
+}
+
+.stats-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.stats-value.revenue {
+  color: #e53e3e;
+}
+
+.stats-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #718096;
+  margin-bottom: 16px;
+}
+
+.stats-progress {
+  width: 100%;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.stats-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #4299e1 0%, #3182ce 100%);
+  width: 65%;
+  border-radius: 4px;
+  transition: width 0.8s ease;
+}
+
+.stats-icon {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+/* Orders Section */
+.orders-section {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  border: 1px solid #e2e8f0;
+  min-height: 300px;
+}
+
+.orders-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.orders-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #9f7aea 0%, #805ad5 100%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.orders-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.no-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  font-size: 16px;
+  color: #718096;
+  background: #f7fafc;
+  border-radius: 8px;
+  border: 2px dashed #e2e8f0;
+}
+
+/* Loading State */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  font-size: 18px;
+  color: #718096;
+}
+
+/* Animation */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stats-card {
+  animation: slideInUp 0.6s ease-out;
+}
+
+.stats-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.stats-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.stats-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.orders-section {
+  animation: slideInUp 0.8s ease-out;
+  animation-delay: 0.4s;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .dashboard-content {
+    margin-left: 260px;
+  }
+
+  .dashboard-grid {
+    padding: 24px;
+  }
+
+  .stats-row {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .dashboard-content {
+    margin-left: 0;
+    padding-top: 80px;
+  }
+
+  .dashboard-header {
+    padding: 20px 24px;
+  }
+
+  .breadcrumb-item {
+    font-size: 24px;
+  }
+
+  .dashboard-grid {
+    padding: 20px;
+  }
+
+  .stats-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .stats-card {
+    padding: 20px;
+  }
+
+  .stats-value {
+    font-size: 28px;
+  }
+
+  .orders-section {
+    padding: 20px;
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    padding: 16px 20px;
+  }
+
+  .breadcrumb-item {
+    font-size: 20px;
+  }
+
+  .dashboard-grid {
+    padding: 16px;
+  }
+
+  .stats-card {
+    padding: 16px;
+  }
+
+  .stats-card-content {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .stats-icon {
+    width: 48px;
+    height: 48px;
+    align-self: flex-end;
+  }
+
+  .stats-value {
+    font-size: 24px;
+  }
+
+  .stats-title {
+    font-size: 14px;
+  }
+
+  .orders-section {
+    padding: 16px;
+    min-height: 200px;
+  }
+
+  .orders-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .orders-title {
+    font-size: 18px;
+  }
+
+  .no-data {
+    height: 120px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-header {
+    padding: 12px 16px;
+  }
+
+  .breadcrumb-item {
+    font-size: 18px;
+  }
+
+  .dashboard-grid {
+    padding: 12px;
+  }
+
+  .stats-card {
+    padding: 12px;
+  }
+
+  .stats-value {
+    font-size: 20px;
+  }
+
+  .stats-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .orders-section {
+    padding: 12px;
+  }
+
+  .orders-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .brand-dashboard {
+    background: #1a202c;
+  }
+
+  .dashboard-content {
+    background: #2d3748;
+  }
+
+  .dashboard-header {
+    background: #2d3748;
+    border-bottom-color: #4a5568;
+  }
+
+  .breadcrumb-item {
+    color: #f7fafc;
+  }
+
+  .stats-card,
+  .orders-section {
+    background: #2d3748;
+    border-color: #4a5568;
+  }
+
+  .stats-value {
+    color: #f7fafc;
+  }
+
+  .stats-title {
+    color: #a0aec0;
+  }
+
+  .orders-title {
+    color: #f7fafc;
+  }
+
+  .no-data {
+    background: #1a202c;
+    border-color: #4a5568;
+    color: #a0aec0;
+  }
+}

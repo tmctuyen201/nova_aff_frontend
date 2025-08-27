@@ -13,6 +13,7 @@ const SignUpPage = () => {
     username: "",
     password: "",
     confirmPassword: "",
+    role: "creator",
   });
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
@@ -165,6 +166,7 @@ const SignUpPage = () => {
         username: formData.username,
         password: formData.password,
         confirm_password: formData.confirmPassword,
+        role: formData.role,
       });
 
       // Store tokens
@@ -322,6 +324,38 @@ const SignUpPage = () => {
                     {validationErrors.confirmPassword}
                   </span>
                 )}
+            </div>
+
+            <div className={styles.formGroup}>
+              <label htmlFor="role" className={styles.formLabel}>
+                * I am
+              </label>
+              <div className={styles.selectWrapper}>
+                <select
+                  id="role"
+                  name="role"
+                  value={formData.role}
+                  onChange={handleInputChange}
+                  className="form-input"
+                  disabled={isLoading}
+                  required
+                >
+                  <option value="creator">Creator/KOL/KOC</option>
+                  <option value="brand">Brand Representative</option>
+                  <option value="admin">Administrator</option>
+                </select>
+                <div className={styles.selectArrow}>
+                  <svg width="14" height="6" viewBox="0 0 14 6" fill="none">
+                    <path
+                      d="M1 1L7 5L13 1"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
             </div>
 
             <button

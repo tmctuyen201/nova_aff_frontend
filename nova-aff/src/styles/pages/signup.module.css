@@ -303,3 +303,34 @@
     height: 45px;
   }
 }
+
+/* Select Dropdown Styles */
+.selectWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.selectWrapper select {
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  padding-right: 35px;
+  cursor: pointer;
+}
+
+.selectArrow {
+  position: absolute;
+  right: 12px;
+  pointer-events: none;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selectWrapper:hover .selectArrow {
+  color: #007bff;
+}

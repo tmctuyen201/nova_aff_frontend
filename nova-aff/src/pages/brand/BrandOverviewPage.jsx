@@ -65,7 +65,7 @@ const BrandOverviewPage = () => {
       title: "5 Powerful Brand-Building Strategies in the Digital Age",
       description:
         "In today's digital landscape, building a strong brand goes far beyond just having a good logo or catchy slogan ....",
-      image: "/blog-brands.jpg",
+      image: "/5 Powerful brand building.png",
     },
     {
       id: 2,
@@ -73,7 +73,7 @@ const BrandOverviewPage = () => {
       title: "Affiliate Marketing 101: The Complete Beginner's Guide",
       description:
         "In today's digital landscape, building a strong brand goes far beyond just having a good logo or catchy slogan ....",
-      image: "/blog-brands.jpg",
+      image: "/Affiliate Marketing 101.png",
     },
     {
       id: 3,
@@ -81,7 +81,7 @@ const BrandOverviewPage = () => {
       title: "Influencer Marketing in 2025: Trends, Tools & Tactics",
       description:
         "In today's digital landscape, building a strong brand goes far beyond just having a good logo or catchy slogan ....",
-      image: "/blog-brands.jpg",
+      image: "/Infiencer marketing in 2025.png",
     },
   ];
 

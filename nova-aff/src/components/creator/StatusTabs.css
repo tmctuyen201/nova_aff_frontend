@@ -1,0 +1,122 @@
+/* Status Tabs Styles - Modern Design */
+.status-tabs {
+  margin-bottom: 28px;
+}
+
+.tabs-container {
+  display: flex;
+  gap: 8px;
+  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+  padding: 8px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.tab-button {
+  background: transparent;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.4;
+  cursor: pointer;
+  padding: 12px 20px;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+  border-radius: 12px;
+  flex: 1;
+  text-align: center;
+}
+
+.tab-button:hover {
+  background: rgba(102, 126, 234, 0.1);
+  color: #667eea;
+  transform: translateY(-1px);
+}
+
+.tab-button.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  transform: translateY(-1px);
+}
+
+.tab-button.active:hover {
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Remove old hover effects */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .status-tabs {
+    margin-bottom: 20px;
+  }
+
+  .tabs-container {
+    gap: 6px;
+    padding: 6px;
+  }
+
+  .tab-button {
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tabs-container {
+    gap: 4px;
+    padding: 4px;
+  }
+
+  .tab-button {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
+
+/* Modern tab animations */
+.status-tabs {
+  animation: tabsSlideIn 0.4s ease-out;
+}
+
+@keyframes tabsSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .tabs-container {
+    background: linear-gradient(135deg, #334155 0%, #1e293b 100%);
+    border-color: #475569;
+  }
+  
+  .tab-button {
+    color: #94a3b8;
+  }
+  
+  .tab-button:hover {
+    background: rgba(102, 126, 234, 0.2);
+    color: #a78bfa;
+  }
+  
+  .tab-button.active {
+    background: linear-gradient(135deg, #4c1d95 0%, #581c87 100%);
+    color: white;
+  }
+}
+
+}

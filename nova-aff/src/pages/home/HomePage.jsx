@@ -9,7 +9,6 @@ import brandsImage from "../../assets/images/brands-image.jpg";
 import creatorsImage from "../../assets/images/creators-image.jpg";
 import affiliateMarketingImg from "../../assets/images/affiliate-marketing.jpg";
 import influencerMarketingImg from "../../assets/images/influencer-marketing.jpg";
-import blogBrandsImg from "../../assets/images/blog-brands.jpg";
 
 const HomePage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -85,21 +84,21 @@ const HomePage = () => {
         "Sáng tạo nội dung “Win” và làm chủ thuật toán trang “For You Page”",
       excerpt:
         "Trong không gian số hiện nay, xây dựng thương hiệu mạnh mẽ vượt xa khỏi việc chỉ có logo hay slogan đẹp mắt ....",
-      imageSrc: blogBrandsImg,
+      imageSrc: "Affiliate is more than just link.png",
     },
     {
       category: "Affiliate Marketing",
       title: "Kiếm tiền với TikTok Affiliate: 7 chiến lược tăng thu nhập",
       excerpt:
         "Trong không gian số hiện nay, xây dựng thương hiệu mạnh mẽ vượt xa khỏi việc chỉ có logo hay slogan đẹp mắt ....",
-      imageSrc: blogBrandsImg,
+      imageSrc: "How to choose the right product.png",
     },
     {
       category: "Influencer Marketing",
       title: "Các chiến lược tăng follower Tiktok miễn phí & hiệu quả 100%",
       excerpt:
         "Trong không gian số hiện nay, xây dựng thương hiệu mạnh mẽ vượt xa khỏi việc chỉ có logo hay slogan đẹp mắt ....",
-      imageSrc: blogBrandsImg,
+      imageSrc: "Brand storyteling.png",
     },
   ];
 

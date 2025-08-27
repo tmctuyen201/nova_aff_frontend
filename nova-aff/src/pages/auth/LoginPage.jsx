@@ -12,6 +12,7 @@ const LoginPage = () => {
   const [formData, setFormData] = useState({
     username: "",
     password: "",
+    role: "creator",
   });
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -32,7 +33,11 @@ const LoginPage = () => {
     setError("");
 
     try {
-      const response = await authAPI.login(formData);
+      const response = await authAPI.login({
+        username: formData.username,
+        password: formData.password,
+        role: formData.role,
+      });
 
       // Store tokens and user info
       tokenManager.setTokens(response.tokens);
@@ -40,14 +45,15 @@ const LoginPage = () => {
 
       console.log("Login successful:", response);
 
-      // Check if user is admin and redirect accordingly
-      const isAdmin =
-        response.user.is_staff ||
-        response.user.username === "admin" ||
-        response.user.role === "admin";
+      // Redirect based on user role
+      const userRole = response.user.role;
 
-      if (isAdmin) {
+      if (userRole === "admin") {
         navigate("/admin/dashboard");
+      } else if (userRole === "brand") {
+        navigate("/brand/dashboard");
+      } else if (userRole === "creator") {
+        navigate("/creator/overview");
       } else {
         navigate("/");
       }
@@ -152,6 +158,37 @@ const LoginPage = () => {
                 >
                   <EyeIcon />
                 </button>
+              </div>
+            </div>
+
+            <div className={styles.formGroup}>
+              <label htmlFor="role" className={styles.formLabel}>
+                Login as
+              </label>
+              <div className={styles.selectWrapper}>
+                <select
+                  id="role"
+                  name="role"
+                  value={formData.role}
+                  onChange={handleInputChange}
+                  className={styles.formInput}
+                  disabled={isLoading}
+                >
+                  <option value="creator">Creator/KOL/KOC</option>
+                  <option value="brand">Brand Representative</option>
+                  <option value="admin">Administrator</option>
+                </select>
+                <div className={styles.selectArrow}>
+                  <svg width="14" height="6" viewBox="0 0 14 6" fill="none">
+                    <path
+                      d="M1 1L7 5L13 1"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
 

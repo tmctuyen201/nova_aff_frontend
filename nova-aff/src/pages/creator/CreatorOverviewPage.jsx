@@ -65,7 +65,7 @@ const CreatorOverviewPage = () => {
           <div className={styles.featuresGrid}>
             <div className={styles.featureCard}>
               <div className={styles.featureImage}>
-                <img src="/expanded-reach.webp" alt="Expanded Reach" />
+                <img src="/expanded-reach.jpg" alt="Expanded Reach" />
               </div>
               <h3>Tối đa hóa Cơ hội Thu nhập</h3>
               <p>
@@ -193,7 +193,7 @@ const CreatorOverviewPage = () => {
           <div className={styles.blogGrid}>
             <article className={styles.blogCard}>
               <div className={styles.blogImage}>
-                <img src="/blog-brands.jpg" alt="Blog post" />
+                <img src="/5 Powerful brand building.png" alt="Blog post" />
               </div>
               <div className={styles.blogContent}>
                 <span className={styles.blogCategory}>Brands</span>
@@ -218,7 +218,7 @@ const CreatorOverviewPage = () => {
             </article>
             <article className={styles.blogCard}>
               <div className={styles.blogImage}>
-                <img src="/blog-brands.jpg" alt="Blog post" />
+                <img src="/Affiliate Marketing 101.png" alt="Blog post" />
               </div>
               <div className={styles.blogContent}>
                 <span className={styles.blogCategory}>Affiliate Marketing</span>
@@ -243,7 +243,7 @@ const CreatorOverviewPage = () => {
             </article>
             <article className={styles.blogCard}>
               <div className={styles.blogImage}>
-                <img src="/blog-brands.jpg" alt="Blog post" />
+                <img src="/Infiencer marketing in 2025.png" alt="Blog post" />
               </div>
               <div className={styles.blogContent}>
                 <span className={styles.blogCategory}>
