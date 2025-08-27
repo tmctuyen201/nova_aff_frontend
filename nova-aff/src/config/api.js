@@ -2,9 +2,7 @@
 const isDevelopment = import.meta.env.MODE === "development";
 
 export const apiConfig = {
-  baseURL: isDevelopment
-    ? "http://localhost:8000/api"
-    : "https://novaaff.id.vn/api",
+  baseURL: "https://novaaff.id.vn/api",
   timeout: isDevelopment ? 10000 : 15000,
   withCredentials: true,
 };
